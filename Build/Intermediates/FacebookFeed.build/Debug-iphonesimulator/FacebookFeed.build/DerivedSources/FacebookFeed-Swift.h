@@ -133,18 +133,18 @@ SWIFT_CLASS("_TtC12FacebookFeed11AppDelegate")
 @end
 
 @class NSCoder;
-@class UILabel;
 @class UIImageView;
+@class UILabel;
 @class UITextView;
 
 SWIFT_CLASS("_TtC12FacebookFeed8FeedCell")
 @interface FeedCell : UICollectionViewCell
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@property (nonatomic, strong) UILabel * _Nonnull nameLabel;
 @property (nonatomic, strong) UIImageView * _Nonnull profileImageView;
-@property (nonatomic, strong) UIImageView * _Nonnull statusImageView;
+@property (nonatomic, strong) UILabel * _Nonnull nameLabel;
 @property (nonatomic, strong) UITextView * _Nonnull statusTextView;
+@property (nonatomic, strong) UIImageView * _Nonnull statusImageView;
 - (void)setupViews;
 @end
 
@@ -168,7 +168,6 @@ SWIFT_CLASS("_TtC12FacebookFeed18FeedViewController")
 
 
 @interface FeedViewController (SWIFT_EXTENSION(FacebookFeed))
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 @end

@@ -10,61 +10,59 @@ provides-member:
 - ["C12FacebookFeed18FeedViewController", ""]
 - ["C12FacebookFeed8FeedCell", ""]
 - ["CSo6UIView", ""]
-- ["C12FacebookFeed18FeedViewController", "numberOfSections"]
 - ["C12FacebookFeed18FeedViewController", "collectionView"]
 - ["C12FacebookFeed18FeedViewController", "collectionView"]
 - ["CSo6UIView", "addConstraintsWithFormat"]
 provides-dynamic-lookup:
-- "numberOfSections"
-- "profileImageView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "setupViews"
-- "statusImageView"
 - "nameLabel"
-- "viewDidLoad"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "profileImageView"
+- "statusImageView"
 - "didReceiveMemoryWarning"
+- "setupViews"
+- "viewDidLoad"
 - "statusTextView"
 depends-top-level:
-- "UIColor"
-- "UITextView"
-- "FeedCell"
-- !private "fatalError"
-- "UICollectionViewLayout"
-- "NSMakeRange"
-- "NSMutableParagraphStyle"
+- "Dictionary"
+- "cellId"
 - "CGRect"
-- "NSForegroundColorAttributeName"
-- "NSTextAttachment"
+- "NSAttributedString"
+- "NSCoder"
+- "FeedCell"
 - "AssignmentPrecedence"
+- "UICollectionView"
+- "NSTextAttachment"
+- !private "fatalError"
+- "NSMakeRange"
+- "NSForegroundColorAttributeName"
+- "Int"
 - "UICollectionViewController"
-- "UIImageView"
+- !private "NSLayoutFormatOptions"
+- "UICollectionViewLayout"
+- "UITextView"
 - "IndexPath"
 - "NSParagraphStyleAttributeName"
-- "NSCoder"
 - "String"
-- !private "NSLayoutFormatOptions"
-- "Int"
-- "StringLiteralType"
-- "FeedViewController"
-- "NSFontAttributeName"
-- "NSAttributedString"
-- "UIFont"
-- "UIImage"
-- "UICollectionViewDelegateFlowLayout"
-- "UICollectionView"
-- !private "NSLayoutConstraint"
-- "UILabel"
-- "UIView"
-- "cellId"
-- !private "UnicodeScalarType"
-- "UICollectionViewCell"
-- "NSMutableAttributedString"
-- "Dictionary"
-- "BooleanLiteralType"
 - "/"
+- "UIFont"
+- "FeedViewController"
+- "UICollectionViewDelegateFlowLayout"
+- "NSMutableParagraphStyle"
+- "BooleanLiteralType"
+- "NSFontAttributeName"
+- !private "UnicodeScalarType"
+- "NSMutableAttributedString"
+- "UICollectionViewCell"
 - "CGSize"
+- "UIView"
+- "StringLiteralType"
+- "UILabel"
+- "UIImageView"
+- "UIColor"
+- !private "NSLayoutConstraint"
+- "UIImage"
 depends-member:
 - ["Ps9AnyObject", "CGRect"]
 - !private ["Ps9AnyObject", "CGSize"]
@@ -105,7 +103,6 @@ depends-member:
 - !private ["Ps9AnyObject", "dequeueReusableCell"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - !private ["Ps9AnyObject", "fatalError"]
-- ["Ps9AnyObject", "font"]
 - !private ["Ps9AnyObject", "frame"]
 - ["Ps9AnyObject", "image"]
 - ["Ps9AnyObject", "init"]
@@ -115,7 +112,6 @@ depends-member:
 - ["Ps9AnyObject", "nameLabel"]
 - !private ["Ps9AnyObject", "navigationItem"]
 - ["Ps9AnyObject", "numberOfLines"]
-- ["Ps9AnyObject", "numberOfSections"]
 - ["Ps9AnyObject", "profileImageView"]
 - !private ["Ps9AnyObject", "register"]
 - ["Ps9AnyObject", "setupViews"]
@@ -125,7 +121,7 @@ depends-member:
 - ["Ps9AnyObject", "systemFont"]
 - ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "title"]
-- ["Ps9AnyObject", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["Ps9AnyObject", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["Ps9AnyObject", "view"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - !private ["Ps9AnyObject", "white"]
@@ -175,7 +171,6 @@ depends-member:
 - ["PSo15CALayerDelegate", "contentMode"]
 - !private ["PSo15CALayerDelegate", "dequeueReusableCell"]
 - !private ["PSo15CALayerDelegate", "fatalError"]
-- ["PSo15CALayerDelegate", "font"]
 - !private ["PSo15CALayerDelegate", "frame"]
 - ["PSo15CALayerDelegate", "image"]
 - ["PSo15CALayerDelegate", "init"]
@@ -188,7 +183,7 @@ depends-member:
 - ["PSo15CALayerDelegate", "statusImageView"]
 - ["PSo15CALayerDelegate", "statusTextView"]
 - ["PSo15CALayerDelegate", "text"]
-- ["PSo15CALayerDelegate", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["PSo15CALayerDelegate", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo15CALayerDelegate", ""]
 - ["PSo13CAMediaTiming", "masksToBounds"]
 - ["V12CoreGraphics7CGFloat", "deinit"]
@@ -241,7 +236,6 @@ depends-member:
 - ["Ps7CVarArg", "didReceiveMemoryWarning"]
 - !private ["Ps7CVarArg", "enumerated"]
 - !private ["Ps7CVarArg", "fatalError"]
-- ["Ps7CVarArg", "font"]
 - !private ["Ps7CVarArg", "frame"]
 - ["Ps7CVarArg", "image"]
 - ["Ps7CVarArg", "init"]
@@ -251,7 +245,6 @@ depends-member:
 - ["Ps7CVarArg", "nameLabel"]
 - !private ["Ps7CVarArg", "navigationItem"]
 - ["Ps7CVarArg", "numberOfLines"]
-- ["Ps7CVarArg", "numberOfSections"]
 - ["Ps7CVarArg", "profileImageView"]
 - !private ["Ps7CVarArg", "register"]
 - ["Ps7CVarArg", "setupViews"]
@@ -262,7 +255,7 @@ depends-member:
 - ["Ps7CVarArg", "systemFont"]
 - ["Ps7CVarArg", "text"]
 - !private ["Ps7CVarArg", "title"]
-- ["Ps7CVarArg", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["Ps7CVarArg", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["Ps7CVarArg", "view"]
 - ["Ps7CVarArg", "viewDidLoad"]
 - !private ["Ps7CVarArg", "white"]
@@ -328,7 +321,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps28CustomDebugStringConvertible", "enumerated"]
 - !private ["Ps28CustomDebugStringConvertible", "fatalError"]
-- ["Ps28CustomDebugStringConvertible", "font"]
 - !private ["Ps28CustomDebugStringConvertible", "frame"]
 - ["Ps28CustomDebugStringConvertible", "image"]
 - ["Ps28CustomDebugStringConvertible", "init"]
@@ -338,7 +330,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "nameLabel"]
 - !private ["Ps28CustomDebugStringConvertible", "navigationItem"]
 - ["Ps28CustomDebugStringConvertible", "numberOfLines"]
-- ["Ps28CustomDebugStringConvertible", "numberOfSections"]
 - ["Ps28CustomDebugStringConvertible", "profileImageView"]
 - !private ["Ps28CustomDebugStringConvertible", "register"]
 - ["Ps28CustomDebugStringConvertible", "setupViews"]
@@ -349,7 +340,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "systemFont"]
 - ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "title"]
-- ["Ps28CustomDebugStringConvertible", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["Ps28CustomDebugStringConvertible", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["Ps28CustomDebugStringConvertible", "view"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - !private ["Ps28CustomDebugStringConvertible", "white"]
@@ -411,7 +402,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps23CustomStringConvertible", "enumerated"]
 - !private ["Ps23CustomStringConvertible", "fatalError"]
-- ["Ps23CustomStringConvertible", "font"]
 - !private ["Ps23CustomStringConvertible", "frame"]
 - ["Ps23CustomStringConvertible", "image"]
 - ["Ps23CustomStringConvertible", "init"]
@@ -421,7 +411,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "nameLabel"]
 - !private ["Ps23CustomStringConvertible", "navigationItem"]
 - ["Ps23CustomStringConvertible", "numberOfLines"]
-- ["Ps23CustomStringConvertible", "numberOfSections"]
 - ["Ps23CustomStringConvertible", "profileImageView"]
 - !private ["Ps23CustomStringConvertible", "register"]
 - ["Ps23CustomStringConvertible", "setupViews"]
@@ -432,7 +421,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "systemFont"]
 - ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "title"]
-- ["Ps23CustomStringConvertible", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["Ps23CustomStringConvertible", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["Ps23CustomStringConvertible", "view"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - !private ["Ps23CustomStringConvertible", "white"]
@@ -487,7 +476,6 @@ depends-member:
 - !private ["Ps9Equatable", "dequeueReusableCell"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
 - !private ["Ps9Equatable", "fatalError"]
-- ["Ps9Equatable", "font"]
 - !private ["Ps9Equatable", "frame"]
 - ["Ps9Equatable", "image"]
 - ["Ps9Equatable", "init"]
@@ -497,7 +485,6 @@ depends-member:
 - ["Ps9Equatable", "nameLabel"]
 - !private ["Ps9Equatable", "navigationItem"]
 - ["Ps9Equatable", "numberOfLines"]
-- ["Ps9Equatable", "numberOfSections"]
 - ["Ps9Equatable", "profileImageView"]
 - !private ["Ps9Equatable", "register"]
 - ["Ps9Equatable", "scaleAspectFill"]
@@ -509,7 +496,7 @@ depends-member:
 - ["Ps9Equatable", "systemFont"]
 - ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "title"]
-- ["Ps9Equatable", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["Ps9Equatable", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["Ps9Equatable", "view"]
 - ["Ps9Equatable", "viewDidLoad"]
 - !private ["Ps9Equatable", "white"]
@@ -574,7 +561,6 @@ depends-member:
 - ["C12FacebookFeed18FeedViewController", "didReceiveMemoryWarning"]
 - ["C12FacebookFeed18FeedViewController", "init"]
 - !private ["C12FacebookFeed18FeedViewController", "navigationItem"]
-- ["C12FacebookFeed18FeedViewController", "numberOfSections"]
 - !private ["C12FacebookFeed18FeedViewController", "view"]
 - ["C12FacebookFeed18FeedViewController", "viewDidLoad"]
 - !private ["Sf", "deinit"]
@@ -617,7 +603,6 @@ depends-member:
 - !private ["Ps8Hashable", "dequeueReusableCell"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps8Hashable", "fatalError"]
-- ["Ps8Hashable", "font"]
 - !private ["Ps8Hashable", "frame"]
 - ["Ps8Hashable", "image"]
 - ["Ps8Hashable", "init"]
@@ -627,7 +612,6 @@ depends-member:
 - ["Ps8Hashable", "nameLabel"]
 - !private ["Ps8Hashable", "navigationItem"]
 - ["Ps8Hashable", "numberOfLines"]
-- ["Ps8Hashable", "numberOfSections"]
 - ["Ps8Hashable", "profileImageView"]
 - !private ["Ps8Hashable", "register"]
 - ["Ps8Hashable", "scaleAspectFill"]
@@ -639,7 +623,7 @@ depends-member:
 - ["Ps8Hashable", "systemFont"]
 - ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "title"]
-- ["Ps8Hashable", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["Ps8Hashable", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["Ps8Hashable", "view"]
 - ["Ps8Hashable", "viewDidLoad"]
 - !private ["Ps8Hashable", "white"]
@@ -728,7 +712,6 @@ depends-member:
 - !private ["PSo8NSCoding", "dequeueReusableCell"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - !private ["PSo8NSCoding", "fatalError"]
-- ["PSo8NSCoding", "font"]
 - !private ["PSo8NSCoding", "frame"]
 - ["PSo8NSCoding", "image"]
 - ["PSo8NSCoding", "init"]
@@ -738,7 +721,6 @@ depends-member:
 - ["PSo8NSCoding", "nameLabel"]
 - !private ["PSo8NSCoding", "navigationItem"]
 - ["PSo8NSCoding", "numberOfLines"]
-- ["PSo8NSCoding", "numberOfSections"]
 - ["PSo8NSCoding", "profileImageView"]
 - !private ["PSo8NSCoding", "register"]
 - ["PSo8NSCoding", "setupViews"]
@@ -747,7 +729,7 @@ depends-member:
 - ["PSo8NSCoding", "string"]
 - ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "title"]
-- ["PSo8NSCoding", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["PSo8NSCoding", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["PSo8NSCoding", "view"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - !private ["PSo8NSCoding", "white"]
@@ -769,7 +751,6 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "navigationItem"]
-- ["PSo26NSExtensionRequestHandling", "numberOfSections"]
 - !private ["PSo26NSExtensionRequestHandling", "view"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
@@ -837,7 +818,6 @@ depends-member:
 - !private ["CSo8NSObject", "dequeueReusableCell"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - !private ["CSo8NSObject", "fatalError"]
-- ["CSo8NSObject", "font"]
 - !private ["CSo8NSObject", "frame"]
 - ["CSo8NSObject", "image"]
 - ["CSo8NSObject", "init"]
@@ -847,7 +827,6 @@ depends-member:
 - ["CSo8NSObject", "nameLabel"]
 - !private ["CSo8NSObject", "navigationItem"]
 - ["CSo8NSObject", "numberOfLines"]
-- ["CSo8NSObject", "numberOfSections"]
 - ["CSo8NSObject", "profileImageView"]
 - !private ["CSo8NSObject", "register"]
 - ["CSo8NSObject", "setupViews"]
@@ -857,7 +836,7 @@ depends-member:
 - ["CSo8NSObject", "systemFont"]
 - ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "title"]
-- ["CSo8NSObject", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["CSo8NSObject", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["CSo8NSObject", "view"]
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["CSo8NSObject", "white"]
@@ -900,7 +879,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCell"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - !private ["PSo16NSObjectProtocol", "fatalError"]
-- ["PSo16NSObjectProtocol", "font"]
 - !private ["PSo16NSObjectProtocol", "frame"]
 - ["PSo16NSObjectProtocol", "image"]
 - ["PSo16NSObjectProtocol", "init"]
@@ -910,7 +888,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "nameLabel"]
 - !private ["PSo16NSObjectProtocol", "navigationItem"]
 - ["PSo16NSObjectProtocol", "numberOfLines"]
-- ["PSo16NSObjectProtocol", "numberOfSections"]
 - ["PSo16NSObjectProtocol", "profileImageView"]
 - !private ["PSo16NSObjectProtocol", "register"]
 - ["PSo16NSObjectProtocol", "setupViews"]
@@ -920,7 +897,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "systemFont"]
 - ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "title"]
-- ["PSo16NSObjectProtocol", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["PSo16NSObjectProtocol", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["PSo16NSObjectProtocol", "view"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "white"]
@@ -1025,7 +1002,6 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "contentMode"]
 - !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCell"]
 - !private ["PSo29UIAccessibilityIdentification", "fatalError"]
-- ["PSo29UIAccessibilityIdentification", "font"]
 - !private ["PSo29UIAccessibilityIdentification", "frame"]
 - ["PSo29UIAccessibilityIdentification", "image"]
 - ["PSo29UIAccessibilityIdentification", "init"]
@@ -1038,7 +1014,7 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "statusImageView"]
 - ["PSo29UIAccessibilityIdentification", "statusTextView"]
 - ["PSo29UIAccessibilityIdentification", "text"]
-- ["PSo29UIAccessibilityIdentification", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["PSo29UIAccessibilityIdentification", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo29UIAccessibilityIdentification", ""]
 - ["PSo12UIAppearance", "CGRect"]
 - ["PSo12UIAppearance", "NSAttributedString"]
@@ -1068,7 +1044,6 @@ depends-member:
 - ["PSo12UIAppearance", "contentMode"]
 - !private ["PSo12UIAppearance", "dequeueReusableCell"]
 - !private ["PSo12UIAppearance", "fatalError"]
-- ["PSo12UIAppearance", "font"]
 - !private ["PSo12UIAppearance", "frame"]
 - ["PSo12UIAppearance", "image"]
 - ["PSo12UIAppearance", "init"]
@@ -1081,7 +1056,7 @@ depends-member:
 - ["PSo12UIAppearance", "statusImageView"]
 - ["PSo12UIAppearance", "statusTextView"]
 - ["PSo12UIAppearance", "text"]
-- ["PSo12UIAppearance", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["PSo12UIAppearance", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo12UIAppearance", ""]
 - ["PSo21UIAppearanceContainer", "CGRect"]
 - !private ["PSo21UIAppearanceContainer", "CGSize"]
@@ -1116,7 +1091,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableCell"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - !private ["PSo21UIAppearanceContainer", "fatalError"]
-- ["PSo21UIAppearanceContainer", "font"]
 - !private ["PSo21UIAppearanceContainer", "frame"]
 - ["PSo21UIAppearanceContainer", "image"]
 - ["PSo21UIAppearanceContainer", "init"]
@@ -1124,14 +1098,13 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "nameLabel"]
 - !private ["PSo21UIAppearanceContainer", "navigationItem"]
 - ["PSo21UIAppearanceContainer", "numberOfLines"]
-- ["PSo21UIAppearanceContainer", "numberOfSections"]
 - ["PSo21UIAppearanceContainer", "profileImageView"]
 - !private ["PSo21UIAppearanceContainer", "register"]
 - ["PSo21UIAppearanceContainer", "setupViews"]
 - ["PSo21UIAppearanceContainer", "statusImageView"]
 - ["PSo21UIAppearanceContainer", "statusTextView"]
 - ["PSo21UIAppearanceContainer", "text"]
-- ["PSo21UIAppearanceContainer", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["PSo21UIAppearanceContainer", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["PSo21UIAppearanceContainer", "view"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
@@ -1208,7 +1181,6 @@ depends-member:
 - ["CSo26UICollectionViewController", "didReceiveMemoryWarning"]
 - ["CSo26UICollectionViewController", "init"]
 - !private ["CSo26UICollectionViewController", "navigationItem"]
-- ["CSo26UICollectionViewController", "numberOfSections"]
 - !private ["CSo26UICollectionViewController", "view"]
 - ["CSo26UICollectionViewController", "viewDidLoad"]
 - ["CSo26UICollectionViewController", ""]
@@ -1220,7 +1192,6 @@ depends-member:
 - ["PSo26UICollectionViewDataSource", "didReceiveMemoryWarning"]
 - !private ["PSo26UICollectionViewDataSource", "init"]
 - !private ["PSo26UICollectionViewDataSource", "navigationItem"]
-- ["PSo26UICollectionViewDataSource", "numberOfSections"]
 - !private ["PSo26UICollectionViewDataSource", "view"]
 - ["PSo26UICollectionViewDataSource", "viewDidLoad"]
 - ["PSo26UICollectionViewDataSource", ""]
@@ -1232,7 +1203,6 @@ depends-member:
 - ["PSo24UICollectionViewDelegate", "didReceiveMemoryWarning"]
 - !private ["PSo24UICollectionViewDelegate", "init"]
 - !private ["PSo24UICollectionViewDelegate", "navigationItem"]
-- ["PSo24UICollectionViewDelegate", "numberOfSections"]
 - !private ["PSo24UICollectionViewDelegate", "view"]
 - ["PSo24UICollectionViewDelegate", "viewDidLoad"]
 - ["PSo24UICollectionViewDelegate", ""]
@@ -1256,16 +1226,13 @@ depends-member:
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - !private ["PSo18UIContentContainer", "init"]
 - !private ["PSo18UIContentContainer", "navigationItem"]
-- ["PSo18UIContentContainer", "numberOfSections"]
 - !private ["PSo18UIContentContainer", "view"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
 - ["PSo30UIContentSizeCategoryAdjusting", "attributedText"]
-- ["PSo30UIContentSizeCategoryAdjusting", "font"]
 - ["PSo30UIContentSizeCategoryAdjusting", "init"]
 - ["PSo30UIContentSizeCategoryAdjusting", "numberOfLines"]
 - ["PSo30UIContentSizeCategoryAdjusting", "text"]
-- ["PSo30UIContentSizeCategoryAdjusting", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo17UICoordinateSpace", "CGRect"]
 - ["PSo17UICoordinateSpace", "NSAttributedString"]
 - ["PSo17UICoordinateSpace", "NSFontAttributeName"]
@@ -1294,7 +1261,6 @@ depends-member:
 - ["PSo17UICoordinateSpace", "contentMode"]
 - !private ["PSo17UICoordinateSpace", "dequeueReusableCell"]
 - !private ["PSo17UICoordinateSpace", "fatalError"]
-- ["PSo17UICoordinateSpace", "font"]
 - !private ["PSo17UICoordinateSpace", "frame"]
 - ["PSo17UICoordinateSpace", "image"]
 - ["PSo17UICoordinateSpace", "init"]
@@ -1307,7 +1273,7 @@ depends-member:
 - ["PSo17UICoordinateSpace", "statusImageView"]
 - ["PSo17UICoordinateSpace", "statusTextView"]
 - ["PSo17UICoordinateSpace", "text"]
-- ["PSo17UICoordinateSpace", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["PSo17UICoordinateSpace", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo17UICoordinateSpace", ""]
 - ["PSo13UIDynamicItem", "CGRect"]
 - ["PSo13UIDynamicItem", "NSAttributedString"]
@@ -1337,7 +1303,6 @@ depends-member:
 - ["PSo13UIDynamicItem", "contentMode"]
 - !private ["PSo13UIDynamicItem", "dequeueReusableCell"]
 - !private ["PSo13UIDynamicItem", "fatalError"]
-- ["PSo13UIDynamicItem", "font"]
 - !private ["PSo13UIDynamicItem", "frame"]
 - ["PSo13UIDynamicItem", "image"]
 - ["PSo13UIDynamicItem", "init"]
@@ -1350,7 +1315,7 @@ depends-member:
 - ["PSo13UIDynamicItem", "statusImageView"]
 - ["PSo13UIDynamicItem", "statusTextView"]
 - ["PSo13UIDynamicItem", "text"]
-- ["PSo13UIDynamicItem", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["PSo13UIDynamicItem", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo13UIDynamicItem", ""]
 - ["PSo18UIFocusEnvironment", "CGRect"]
 - !private ["PSo18UIFocusEnvironment", "CGSize"]
@@ -1385,7 +1350,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableCell"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UIFocusEnvironment", "fatalError"]
-- ["PSo18UIFocusEnvironment", "font"]
 - !private ["PSo18UIFocusEnvironment", "frame"]
 - ["PSo18UIFocusEnvironment", "image"]
 - ["PSo18UIFocusEnvironment", "init"]
@@ -1393,14 +1357,13 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "nameLabel"]
 - !private ["PSo18UIFocusEnvironment", "navigationItem"]
 - ["PSo18UIFocusEnvironment", "numberOfLines"]
-- ["PSo18UIFocusEnvironment", "numberOfSections"]
 - ["PSo18UIFocusEnvironment", "profileImageView"]
 - !private ["PSo18UIFocusEnvironment", "register"]
 - ["PSo18UIFocusEnvironment", "setupViews"]
 - ["PSo18UIFocusEnvironment", "statusImageView"]
 - ["PSo18UIFocusEnvironment", "statusTextView"]
 - ["PSo18UIFocusEnvironment", "text"]
-- ["PSo18UIFocusEnvironment", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["PSo18UIFocusEnvironment", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["PSo18UIFocusEnvironment", "view"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
@@ -1432,7 +1395,6 @@ depends-member:
 - ["PSo11UIFocusItem", "contentMode"]
 - !private ["PSo11UIFocusItem", "dequeueReusableCell"]
 - !private ["PSo11UIFocusItem", "fatalError"]
-- ["PSo11UIFocusItem", "font"]
 - !private ["PSo11UIFocusItem", "frame"]
 - ["PSo11UIFocusItem", "image"]
 - ["PSo11UIFocusItem", "init"]
@@ -1445,7 +1407,7 @@ depends-member:
 - ["PSo11UIFocusItem", "statusImageView"]
 - ["PSo11UIFocusItem", "statusTextView"]
 - ["PSo11UIFocusItem", "text"]
-- ["PSo11UIFocusItem", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["PSo11UIFocusItem", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo11UIFocusItem", ""]
 - ["CSo6UIFont", "boldSystemFont"]
 - ["CSo6UIFont", "deinit"]
@@ -1456,15 +1418,12 @@ depends-member:
 - ["CSo11UIImageView", "image"]
 - ["CSo11UIImageView", "init"]
 - ["CSo11UIImageView", "layer"]
-- ["CSo11UIImageView", "translatesAutoresizingMaskIntoConstraints"]
-- ["PSo10UIKeyInput", "font"]
 - ["PSo10UIKeyInput", "init"]
 - ["PSo10UIKeyInput", "text"]
 - ["CSo7UILabel", "attributedText"]
 - ["CSo7UILabel", "deinit"]
 - ["CSo7UILabel", "init"]
 - ["CSo7UILabel", "numberOfLines"]
-- ["CSo7UILabel", "translatesAutoresizingMaskIntoConstraints"]
 - ["CSo16UINavigationItem", "deinit"]
 - !private ["CSo16UINavigationItem", "title"]
 - ["CSo11UIResponder", "CGRect"]
@@ -1506,7 +1465,6 @@ depends-member:
 - !private ["CSo11UIResponder", "dequeueReusableCell"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - !private ["CSo11UIResponder", "fatalError"]
-- ["CSo11UIResponder", "font"]
 - !private ["CSo11UIResponder", "frame"]
 - ["CSo11UIResponder", "image"]
 - ["CSo11UIResponder", "init"]
@@ -1514,14 +1472,13 @@ depends-member:
 - ["CSo11UIResponder", "nameLabel"]
 - !private ["CSo11UIResponder", "navigationItem"]
 - ["CSo11UIResponder", "numberOfLines"]
-- ["CSo11UIResponder", "numberOfSections"]
 - ["CSo11UIResponder", "profileImageView"]
 - !private ["CSo11UIResponder", "register"]
 - ["CSo11UIResponder", "setupViews"]
 - ["CSo11UIResponder", "statusImageView"]
 - ["CSo11UIResponder", "statusTextView"]
 - ["CSo11UIResponder", "text"]
-- ["CSo11UIResponder", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["CSo11UIResponder", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["CSo11UIResponder", "view"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", "CGRect"]
@@ -1557,7 +1514,6 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "dequeueReusableCell"]
 - ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
 - !private ["PSo30UIResponderStandardEditActions", "fatalError"]
-- ["PSo30UIResponderStandardEditActions", "font"]
 - !private ["PSo30UIResponderStandardEditActions", "frame"]
 - ["PSo30UIResponderStandardEditActions", "image"]
 - ["PSo30UIResponderStandardEditActions", "init"]
@@ -1565,21 +1521,19 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "nameLabel"]
 - !private ["PSo30UIResponderStandardEditActions", "navigationItem"]
 - ["PSo30UIResponderStandardEditActions", "numberOfLines"]
-- ["PSo30UIResponderStandardEditActions", "numberOfSections"]
 - ["PSo30UIResponderStandardEditActions", "profileImageView"]
 - !private ["PSo30UIResponderStandardEditActions", "register"]
 - ["PSo30UIResponderStandardEditActions", "setupViews"]
 - ["PSo30UIResponderStandardEditActions", "statusImageView"]
 - ["PSo30UIResponderStandardEditActions", "statusTextView"]
 - ["PSo30UIResponderStandardEditActions", "text"]
-- ["PSo30UIResponderStandardEditActions", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["PSo30UIResponderStandardEditActions", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["PSo30UIResponderStandardEditActions", "view"]
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["CSo12UIScrollView", "alwaysBounceVertical"]
 - !private ["CSo12UIScrollView", "backgroundColor"]
 - !private ["CSo12UIScrollView", "dequeueReusableCell"]
-- ["CSo12UIScrollView", "font"]
 - ["CSo12UIScrollView", "init"]
 - !private ["CSo12UIScrollView", "register"]
 - ["CSo12UIScrollView", "text"]
@@ -1591,7 +1545,6 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "didReceiveMemoryWarning"]
 - !private ["PSo20UIScrollViewDelegate", "init"]
 - !private ["PSo20UIScrollViewDelegate", "navigationItem"]
-- ["PSo20UIScrollViewDelegate", "numberOfSections"]
 - !private ["PSo20UIScrollViewDelegate", "view"]
 - ["PSo20UIScrollViewDelegate", "viewDidLoad"]
 - ["PSo20UIScrollViewDelegate", ""]
@@ -1603,18 +1556,14 @@ depends-member:
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - !private ["PSo16UIStateRestoring", "init"]
 - !private ["PSo16UIStateRestoring", "navigationItem"]
-- ["PSo16UIStateRestoring", "numberOfSections"]
 - !private ["PSo16UIStateRestoring", "view"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
-- ["PSo11UITextInput", "font"]
 - ["PSo11UITextInput", "init"]
 - ["PSo11UITextInput", "text"]
-- ["PSo17UITextInputTraits", "font"]
 - ["PSo17UITextInputTraits", "init"]
 - ["PSo17UITextInputTraits", "text"]
 - ["CSo10UITextView", "deinit"]
-- ["CSo10UITextView", "font"]
 - ["CSo10UITextView", "init"]
 - ["CSo10UITextView", "text"]
 - ["PSo18UITraitEnvironment", "CGRect"]
@@ -1650,7 +1599,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "dequeueReusableCell"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UITraitEnvironment", "fatalError"]
-- ["PSo18UITraitEnvironment", "font"]
 - !private ["PSo18UITraitEnvironment", "frame"]
 - ["PSo18UITraitEnvironment", "image"]
 - ["PSo18UITraitEnvironment", "init"]
@@ -1658,14 +1606,13 @@ depends-member:
 - ["PSo18UITraitEnvironment", "nameLabel"]
 - !private ["PSo18UITraitEnvironment", "navigationItem"]
 - ["PSo18UITraitEnvironment", "numberOfLines"]
-- ["PSo18UITraitEnvironment", "numberOfSections"]
 - ["PSo18UITraitEnvironment", "profileImageView"]
 - !private ["PSo18UITraitEnvironment", "register"]
 - ["PSo18UITraitEnvironment", "setupViews"]
 - ["PSo18UITraitEnvironment", "statusImageView"]
 - ["PSo18UITraitEnvironment", "statusTextView"]
 - ["PSo18UITraitEnvironment", "text"]
-- ["PSo18UITraitEnvironment", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["PSo18UITraitEnvironment", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["PSo18UITraitEnvironment", "view"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
@@ -1699,7 +1646,6 @@ depends-member:
 - ["CSo6UIView", "deinit"]
 - !private ["CSo6UIView", "dequeueReusableCell"]
 - !private ["CSo6UIView", "fatalError"]
-- ["CSo6UIView", "font"]
 - !private ["CSo6UIView", "frame"]
 - ["CSo6UIView", "image"]
 - ["CSo6UIView", "init"]
@@ -1712,7 +1658,7 @@ depends-member:
 - ["CSo6UIView", "statusImageView"]
 - ["CSo6UIView", "statusTextView"]
 - ["CSo6UIView", "text"]
-- ["CSo6UIView", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["CSo6UIView", "translatesAutoresizingMaskIntoConstraints"]
 - ["OSC17UIViewContentMode", "deinit"]
 - ["OSC17UIViewContentMode", "scaleAspectFill"]
 - ["OSC17UIViewContentMode", "scaleAspectFit"]
@@ -1729,7 +1675,6 @@ depends-member:
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "init"]
 - !private ["CSo16UIViewController", "navigationItem"]
-- ["CSo16UIViewController", "numberOfSections"]
 - !private ["CSo16UIViewController", "view"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["Su", "deinit"]
@@ -1769,7 +1714,6 @@ depends-member:
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "contentMode"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "dequeueReusableCell"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "fatalError"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "font"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "frame"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "image"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
@@ -1782,7 +1726,7 @@ depends-member:
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "statusImageView"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "statusTextView"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "translatesAutoresizingMaskIntoConstraints"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
 - !private ["Ps24_DestructorSafeContainer", "Iterator"]
 - !private ["Ps24_DestructorSafeContainer", "_Element"]
@@ -1839,7 +1783,6 @@ depends-member:
 - !private ["Ps9_Hashable", "dequeueReusableCell"]
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps9_Hashable", "fatalError"]
-- ["Ps9_Hashable", "font"]
 - !private ["Ps9_Hashable", "frame"]
 - ["Ps9_Hashable", "image"]
 - ["Ps9_Hashable", "init"]
@@ -1849,7 +1792,6 @@ depends-member:
 - ["Ps9_Hashable", "nameLabel"]
 - !private ["Ps9_Hashable", "navigationItem"]
 - ["Ps9_Hashable", "numberOfLines"]
-- ["Ps9_Hashable", "numberOfSections"]
 - ["Ps9_Hashable", "profileImageView"]
 - !private ["Ps9_Hashable", "register"]
 - ["Ps9_Hashable", "scaleAspectFill"]
@@ -1861,7 +1803,7 @@ depends-member:
 - ["Ps9_Hashable", "systemFont"]
 - ["Ps9_Hashable", "text"]
 - !private ["Ps9_Hashable", "title"]
-- ["Ps9_Hashable", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["Ps9_Hashable", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["Ps9_Hashable", "view"]
 - ["Ps9_Hashable", "viewDidLoad"]
 - !private ["Ps9_Hashable", "white"]
@@ -2024,4 +1966,4 @@ depends-external:
 - "/Users/sharmpi/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.swiftmodule"
 - "/Users/sharmpi/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
 - "/Users/sharmpi/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
-interface-hash: "352c822dbf50eb73e542dd4f7b19c34f"
+interface-hash: "1bff8d2dfa59cf01443c633235785926"
