@@ -1,0 +1,6 @@
+version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
+options: "deb5a870e3cbe2cbe40f838deb8f5ce9"
+build_time: [527027287, 521788000]
+inputs:
+  "/Users/sharmpi/Desktop/FacebookFeed/FacebookFeed/FeedViewController.swift": !dirty [527027047, 0]
+  "/Users/sharmpi/Desktop/FacebookFeed/FacebookFeed/AppDelegate.swift": !dirty [527010448, 0]

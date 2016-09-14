@@ -136,6 +136,8 @@ SWIFT_CLASS("_TtC12FacebookFeed11AppDelegate")
 @class UIImageView;
 @class UILabel;
 @class UITextView;
+@class UIView;
+@class UIButton;
 
 SWIFT_CLASS("_TtC12FacebookFeed8FeedCell")
 @interface FeedCell : UICollectionViewCell
@@ -145,6 +147,12 @@ SWIFT_CLASS("_TtC12FacebookFeed8FeedCell")
 @property (nonatomic, strong) UILabel * _Nonnull nameLabel;
 @property (nonatomic, strong) UITextView * _Nonnull statusTextView;
 @property (nonatomic, strong) UIImageView * _Nonnull statusImageView;
+@property (nonatomic, strong) UILabel * _Nonnull likesCommentsLabel;
+@property (nonatomic, strong) UIView * _Nonnull dividerLine;
+@property (nonatomic, strong) UIButton * _Nonnull likeButton;
+@property (nonatomic, strong) UIButton * _Nonnull commentButton;
+@property (nonatomic, strong) UIButton * _Nonnull shareButton;
++ (UIButton * _Nonnull)buttonForTitle:(NSString * _Nonnull)title imageName:(NSString * _Nonnull)imageName;
 - (void)setupViews;
 @end
 
@@ -160,6 +168,12 @@ SWIFT_CLASS("_TtC12FacebookFeed18FeedViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@protocol UIViewControllerTransitionCoordinator;
+
+@interface FeedViewController (SWIFT_EXTENSION(FacebookFeed))
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator> _Nonnull)coordinator;
+@end
+
 @class UICollectionView;
 
 @interface FeedViewController (SWIFT_EXTENSION(FacebookFeed)) <UICollectionViewDelegateFlowLayout>
@@ -170,6 +184,11 @@ SWIFT_CLASS("_TtC12FacebookFeed18FeedViewController")
 @interface FeedViewController (SWIFT_EXTENSION(FacebookFeed))
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+@end
+
+
+@interface UIColor (SWIFT_EXTENSION(FacebookFeed))
++ (UIColor * _Nonnull)rgbWithRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue;
 @end
 
 

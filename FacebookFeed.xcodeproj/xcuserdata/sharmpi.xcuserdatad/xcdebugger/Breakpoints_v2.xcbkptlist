@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FacebookFeed/FeedViewController.swift"
-            timestampString = "495390649.555952"
+            timestampString = "495574776.481661"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "profileImageView"
             landmarkType = "24">
          </BreakpointContent>
