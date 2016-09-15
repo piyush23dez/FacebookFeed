@@ -63,9 +63,9 @@ class FeedCell: UICollectionViewCell {
                         }
                         switch (result as! APIError) {
                         case APIError.NetworkError:
-                            print("No Internet")
+                            print("Network Error")
                         case APIError.UnknownError:
-                            print("Unknown Internet")
+                            print("Unknown Error")
                         }
                     }
                 }
