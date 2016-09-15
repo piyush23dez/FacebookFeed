@@ -29,6 +29,7 @@ class FeedCell: UICollectionViewCell {
         didSet {
             
             statusImageView.image = nil
+            loader?.startAnimating()
             if let statusImageUrl: String = post?.statusImageUrl {
                 
                 if let cachedImage = imageCache.object(forKey: statusImageUrl as NSString) as? UIImage {
@@ -49,7 +50,16 @@ class FeedCell: UICollectionViewCell {
                             }
                         }
                         else {
-                            print(result as? APIError)
+                            
+                            DispatchQueue.main.async {
+                                self.loader?.stopAnimating()
+                            }
+                            switch (result as! APIError) {
+                            case APIError.NetworkError:
+                                print("No Internet")
+                            case APIError.UnknownError:
+                                print("Unknown Internet")
+                            }
                         }
                     }
                 }

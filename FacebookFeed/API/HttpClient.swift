@@ -13,8 +13,8 @@ class HttpClient {
     private var sessionConfig = URLSessionConfiguration.default
     private var session: URLSession {
         sessionConfig.requestCachePolicy = .reloadIgnoringLocalCacheData
-        sessionConfig.timeoutIntervalForRequest = 30
-        sessionConfig.timeoutIntervalForResource = 30
+        sessionConfig.timeoutIntervalForRequest = 10
+        sessionConfig.timeoutIntervalForResource = 10
         return URLSession(configuration: sessionConfig)
     }
     
@@ -37,6 +37,7 @@ class HttpClient {
             }
             else {
                 if error != nil {
+                    print(error!.localizedDescription)
                     completionHandler(Result.Failure(error: .NetworkError))
                 }
                 else {

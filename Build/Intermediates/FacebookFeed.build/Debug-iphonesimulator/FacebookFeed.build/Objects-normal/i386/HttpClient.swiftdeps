@@ -12,13 +12,14 @@ depends-top-level:
 - "Result"
 - !private "HTTPURLResponse"
 - "APIError"
+- !private "AssignmentPrecedence"
+- !private "=="
+- !private "CastingPrecedence"
 - "URLSessionConfiguration"
 - !private "Int"
 - !private "!="
 - "URL"
-- !private "CastingPrecedence"
-- !private "=="
-- !private "AssignmentPrecedence"
+- !private "print"
 - "Void"
 - "URLSession"
 depends-member:
@@ -30,6 +31,7 @@ depends-member:
 - !private ["Ps9AnyObject", "dataTask"]
 - ["Ps9AnyObject", "default"]
 - !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "requestCachePolicy"]
 - !private ["Ps9AnyObject", "resume"]
 - !private ["Ps9AnyObject", "session"]
@@ -92,6 +94,7 @@ depends-member:
 - !private ["Ps5Error", "NetworkError"]
 - !private ["Ps5Error", "UnknownError"]
 - !private ["Ps5Error", "deinit"]
+- !private ["Ps5Error", "localizedDescription"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps23ExpressibleByNilLiteral", "NetworkError"]
 - !private ["Ps23ExpressibleByNilLiteral", "UnknownError"]
@@ -121,6 +124,7 @@ depends-member:
 - ["C12FacebookFeed10HttpClient", "Void"]
 - ["C12FacebookFeed10HttpClient", "deinit"]
 - ["C12FacebookFeed10HttpClient", "init"]
+- !private ["C12FacebookFeed10HttpClient", "print"]
 - ["C12FacebookFeed10HttpClient", "sendRequest"]
 - !private ["C12FacebookFeed10HttpClient", "session"]
 - !private ["C12FacebookFeed10HttpClient", "sessionConfig"]
@@ -158,6 +162,7 @@ depends-member:
 - !private ["O12FacebookFeed6Result", "Failure"]
 - !private ["O12FacebookFeed6Result", "Success"]
 - !private ["O12FacebookFeed6Result", "deinit"]
+- !private ["SS", "deinit"]
 - ["V10Foundation3URL", "deinit"]
 - !private ["CSo11URLResponse", "statusCode"]
 - !private ["CSo10URLSession", "dataTask"]
@@ -215,6 +220,7 @@ depends-nominal:
 - !private "Sq"
 - !private "Ps16RawRepresentable"
 - !private "O12FacebookFeed6Result"
+- !private "SS"
 - "V10Foundation3URL"
 - !private "CSo11URLResponse"
 - "CSo10URLSession"

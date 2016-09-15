@@ -7,61 +7,63 @@ provides-nominal:
 provides-member:
 - ["C12FacebookFeed8FeedCell", ""]
 provides-dynamic-lookup:
-- "profileImageView"
-- "likeButton"
-- "nameLabel"
-- "statusTextView"
-- "loader"
 - "dividerLine"
+- "setupLoader"
 - "buttonFor"
+- "statusImageView"
+- "shareButton"
 - "likesCommentsLabel"
 - "setupViews"
-- "shareButton"
-- "statusImageView"
-- "setupLoader"
-- "setupPost"
 - "commentButton"
+- "statusTextView"
+- "likeButton"
+- "loader"
+- "profileImageView"
+- "setupPost"
+- "nameLabel"
 depends-top-level:
-- "NSString"
-- "NSCache"
-- !private "NSMutableParagraphStyle"
-- "BooleanLiteralType"
-- !private "DispatchQueue"
-- !private "NSMutableAttributedString"
-- "UIFont"
-- "Post"
-- "UICollectionViewCell"
-- !private "NSMakeRange"
-- "UIImage"
-- !private "NSFontAttributeName"
-- !private "NSParagraphStyleAttributeName"
-- "NSCoder"
-- !private "Data"
-- !private "fatalError"
-- "String"
-- "StringLiteralType"
-- "CGRect"
-- !private "APIError"
-- "UIImageView"
-- "FeedCell"
-- !private "Dictionary"
-- !private "UIEdgeInsetsMake"
-- "UILabel"
-- !private "print"
-- "AnyObject"
-- "imageCache"
-- "CastingPrecedence"
 - "UIActivityIndicatorView"
-- "AssignmentPrecedence"
-- "UIColor"
-- "UITextView"
+- !private "NSMutableAttributedString"
+- "NSCoder"
+- "UILabel"
+- "BooleanLiteralType"
+- !private "UIEdgeInsetsMake"
+- !private "NSFontAttributeName"
+- "UIImage"
+- !private "NSParagraphStyleAttributeName"
 - !private "NSTextAttachment"
-- !private "NSAttributedString"
-- !private "NSForegroundColorAttributeName"
-- "UIButton"
 - "UIView"
+- "CGRect"
+- "UIColor"
+- "UIImageView"
+- "AnyObject"
+- !private "NSMutableParagraphStyle"
+- "StringLiteralType"
+- "UICollectionViewCell"
+- "NSString"
+- !private "fatalError"
+- "imageCache"
+- "UIFont"
+- !private "DispatchQueue"
+- "FeedCell"
+- !private "NSForegroundColorAttributeName"
+- !private "NSMakeRange"
+- "UITextView"
+- "CastingPrecedence"
+- !private "NSAttributedString"
+- "AssignmentPrecedence"
+- "String"
+- "Post"
+- "UIButton"
+- !private "print"
+- "NSCache"
+- !private "APIError"
+- !private "Dictionary"
 - !private "PostAPI"
+- !private "Data"
 depends-member:
+- !private ["O12FacebookFeed8APIError", "NetworkError"]
+- !private ["O12FacebookFeed8APIError", "UnknownError"]
 - !private ["O12FacebookFeed8APIError", "deinit"]
 - !private ["Ps9AnyObject", "CGRect"]
 - !private ["Ps9AnyObject", "DispatchQueue"]
@@ -503,6 +505,7 @@ depends-member:
 - !private ["Ps9Equatable", "NSMutableParagraphStyle"]
 - !private ["Ps9Equatable", "NSParagraphStyleAttributeName"]
 - !private ["Ps9Equatable", "NSTextAttachment"]
+- !private ["Ps9Equatable", "NetworkError"]
 - !private ["Ps9Equatable", "PostAPI"]
 - !private ["Ps9Equatable", "UIActivityIndicatorView"]
 - !private ["Ps9Equatable", "UIButton"]
@@ -514,6 +517,7 @@ depends-member:
 - ["Ps9Equatable", "UILabel"]
 - ["Ps9Equatable", "UITextView"]
 - ["Ps9Equatable", "UIView"]
+- !private ["Ps9Equatable", "UnknownError"]
 - !private ["Ps9Equatable", "addAttribute"]
 - !private ["Ps9Equatable", "addConstraintsWithFormat"]
 - !private ["Ps9Equatable", "addSubview"]
@@ -574,6 +578,8 @@ depends-member:
 - !private ["Ps9Equatable", "titleLabel"]
 - !private ["Ps9Equatable", "white"]
 - ["Ps9Equatable", ""]
+- !private ["Ps5Error", "NetworkError"]
+- !private ["Ps5Error", "UnknownError"]
 - !private ["Ps25ExpressibleByArrayLiteral", "normal"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "Key"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "Value"]
@@ -651,6 +657,7 @@ depends-member:
 - !private ["Ps8Hashable", "NSMutableParagraphStyle"]
 - !private ["Ps8Hashable", "NSParagraphStyleAttributeName"]
 - !private ["Ps8Hashable", "NSTextAttachment"]
+- !private ["Ps8Hashable", "NetworkError"]
 - !private ["Ps8Hashable", "PostAPI"]
 - !private ["Ps8Hashable", "UIActivityIndicatorView"]
 - !private ["Ps8Hashable", "UIButton"]
@@ -662,6 +669,7 @@ depends-member:
 - ["Ps8Hashable", "UILabel"]
 - ["Ps8Hashable", "UITextView"]
 - ["Ps8Hashable", "UIView"]
+- !private ["Ps8Hashable", "UnknownError"]
 - !private ["Ps8Hashable", "addAttribute"]
 - !private ["Ps8Hashable", "addConstraintsWithFormat"]
 - !private ["Ps8Hashable", "addSubview"]
@@ -2041,6 +2049,7 @@ depends-member:
 - !private ["Ps9_Hashable", "NSMutableParagraphStyle"]
 - !private ["Ps9_Hashable", "NSParagraphStyleAttributeName"]
 - !private ["Ps9_Hashable", "NSTextAttachment"]
+- !private ["Ps9_Hashable", "NetworkError"]
 - !private ["Ps9_Hashable", "PostAPI"]
 - !private ["Ps9_Hashable", "UIActivityIndicatorView"]
 - !private ["Ps9_Hashable", "UIButton"]
@@ -2052,6 +2061,7 @@ depends-member:
 - ["Ps9_Hashable", "UILabel"]
 - ["Ps9_Hashable", "UITextView"]
 - ["Ps9_Hashable", "UIView"]
+- !private ["Ps9_Hashable", "UnknownError"]
 - !private ["Ps9_Hashable", "addAttribute"]
 - !private ["Ps9_Hashable", "addConstraintsWithFormat"]
 - !private ["Ps9_Hashable", "addSubview"]
@@ -2142,6 +2152,7 @@ depends-nominal:
 - !private "CSo13DispatchQueue"
 - !private "Sd"
 - "Ps9Equatable"
+- !private "Ps5Error"
 - !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps30ExpressibleByDictionaryLiteral"
 - "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
