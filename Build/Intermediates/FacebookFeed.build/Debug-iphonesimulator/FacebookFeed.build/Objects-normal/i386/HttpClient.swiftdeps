@@ -7,20 +7,20 @@ provides-member:
 - ["C12FacebookFeed10HttpClient", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "HttpClient"
-- "Data"
-- "Result"
+- "URL"
+- !private "Int"
 - !private "HTTPURLResponse"
 - "APIError"
-- !private "AssignmentPrecedence"
-- !private "=="
-- !private "CastingPrecedence"
+- "Result"
+- "Data"
+- "HttpClient"
 - "URLSessionConfiguration"
-- !private "Int"
 - !private "!="
-- "URL"
 - !private "print"
 - "Void"
+- !private "CastingPrecedence"
+- !private "=="
+- !private "AssignmentPrecedence"
 - "URLSession"
 depends-member:
 - !private ["O12FacebookFeed8APIError", "NetworkError"]

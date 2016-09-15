@@ -1,66 +1,62 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "imageCache"
 - "FeedCell"
 provides-nominal:
 - "C12FacebookFeed8FeedCell"
 provides-member:
 - ["C12FacebookFeed8FeedCell", ""]
 provides-dynamic-lookup:
-- "dividerLine"
-- "setupLoader"
-- "buttonFor"
-- "statusImageView"
-- "shareButton"
-- "likesCommentsLabel"
-- "setupViews"
-- "commentButton"
-- "statusTextView"
-- "likeButton"
 - "loader"
 - "profileImageView"
 - "setupPost"
+- "likeButton"
 - "nameLabel"
+- "statusTextView"
+- "commentButton"
+- "likesCommentsLabel"
+- "shareButton"
+- "setupLoader"
+- "dividerLine"
+- "setupViews"
+- "buttonFor"
+- "statusImageView"
 depends-top-level:
+- !private "NSMutableParagraphStyle"
+- !private "Data"
+- !private "NSFontAttributeName"
+- "String"
+- "BooleanLiteralType"
+- "UIImageView"
+- "UIColor"
+- !private "APIError"
+- "UIButton"
+- "UIImage"
+- "UIFont"
+- !private "NSTextAttachment"
+- !private "DispatchQueue"
+- !private "fatalError"
+- !private "NSMakeRange"
+- !private "NSString"
+- "UILabel"
+- !private "NSAttributedString"
+- "StringLiteralType"
 - "UIActivityIndicatorView"
+- "UITextView"
+- !private "NSForegroundColorAttributeName"
+- "UICollectionViewCell"
+- "UIView"
+- !private "UIEdgeInsetsMake"
+- !private "print"
+- "CGRect"
+- !private "PostAPI"
+- "CastingPrecedence"
 - !private "NSMutableAttributedString"
 - "NSCoder"
-- "UILabel"
-- "BooleanLiteralType"
-- !private "UIEdgeInsetsMake"
-- !private "NSFontAttributeName"
-- "UIImage"
-- !private "NSParagraphStyleAttributeName"
-- !private "NSTextAttachment"
-- "UIView"
-- "CGRect"
-- "UIColor"
-- "UIImageView"
-- "AnyObject"
-- !private "NSMutableParagraphStyle"
-- "StringLiteralType"
-- "UICollectionViewCell"
-- "NSString"
-- !private "fatalError"
-- "imageCache"
-- "UIFont"
-- !private "DispatchQueue"
-- "FeedCell"
-- !private "NSForegroundColorAttributeName"
-- !private "NSMakeRange"
-- "UITextView"
-- "CastingPrecedence"
-- !private "NSAttributedString"
 - "AssignmentPrecedence"
-- "String"
+- "FeedCell"
 - "Post"
-- "UIButton"
-- !private "print"
-- "NSCache"
-- !private "APIError"
 - !private "Dictionary"
-- !private "PostAPI"
-- !private "Data"
+- !private "NSParagraphStyleAttributeName"
 depends-member:
 - !private ["O12FacebookFeed8APIError", "NetworkError"]
 - !private ["O12FacebookFeed8APIError", "UnknownError"]
@@ -100,14 +96,13 @@ depends-member:
 - !private ["Ps9AnyObject", "characters"]
 - ["Ps9AnyObject", "commentButton"]
 - ["Ps9AnyObject", "contentMode"]
-- ["Ps9AnyObject", "deinit"]
 - ["Ps9AnyObject", "dividerLine"]
 - !private ["Ps9AnyObject", "fatalError"]
 - !private ["Ps9AnyObject", "fetchPostImage"]
 - ["Ps9AnyObject", "font"]
+- !private ["Ps9AnyObject", "getCachedImage"]
 - !private ["Ps9AnyObject", "hidesWhenStopped"]
 - ["Ps9AnyObject", "image"]
-- !private ["Ps9AnyObject", "imageCache"]
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "isEditable"]
 - ["Ps9AnyObject", "isScrollEnabled"]
@@ -123,14 +118,13 @@ depends-member:
 - !private ["Ps9AnyObject", "numComments"]
 - !private ["Ps9AnyObject", "numLikes"]
 - ["Ps9AnyObject", "numberOfLines"]
-- !private ["Ps9AnyObject", "object"]
 - ["Ps9AnyObject", "post"]
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "profileImageName"]
 - ["Ps9AnyObject", "profileImageView"]
 - ["Ps9AnyObject", "rgb"]
+- !private ["Ps9AnyObject", "saveImage"]
 - !private ["Ps9AnyObject", "setImage"]
-- !private ["Ps9AnyObject", "setObject"]
 - !private ["Ps9AnyObject", "setTitle"]
 - !private ["Ps9AnyObject", "setTitleColor"]
 - ["Ps9AnyObject", "setupLoader"]
@@ -193,7 +187,6 @@ depends-member:
 - ["PSo15CALayerDelegate", "font"]
 - !private ["PSo15CALayerDelegate", "hidesWhenStopped"]
 - ["PSo15CALayerDelegate", "image"]
-- !private ["PSo15CALayerDelegate", "imageCache"]
 - ["PSo15CALayerDelegate", "init"]
 - ["PSo15CALayerDelegate", "isEditable"]
 - ["PSo15CALayerDelegate", "isScrollEnabled"]
@@ -268,7 +261,6 @@ depends-member:
 - ["Ps7CVarArg", "font"]
 - !private ["Ps7CVarArg", "hidesWhenStopped"]
 - ["Ps7CVarArg", "image"]
-- !private ["Ps7CVarArg", "imageCache"]
 - ["Ps7CVarArg", "init"]
 - ["Ps7CVarArg", "isEditable"]
 - ["Ps7CVarArg", "isScrollEnabled"]
@@ -281,13 +273,11 @@ depends-member:
 - ["Ps7CVarArg", "masksToBounds"]
 - ["Ps7CVarArg", "nameLabel"]
 - ["Ps7CVarArg", "numberOfLines"]
-- !private ["Ps7CVarArg", "object"]
 - ["Ps7CVarArg", "post"]
 - !private ["Ps7CVarArg", "print"]
 - ["Ps7CVarArg", "profileImageView"]
 - ["Ps7CVarArg", "rgb"]
 - !private ["Ps7CVarArg", "setImage"]
-- !private ["Ps7CVarArg", "setObject"]
 - !private ["Ps7CVarArg", "setTitle"]
 - !private ["Ps7CVarArg", "setTitleColor"]
 - ["Ps7CVarArg", "setupLoader"]
@@ -358,7 +348,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "font"]
 - !private ["Ps28CustomDebugStringConvertible", "hidesWhenStopped"]
 - ["Ps28CustomDebugStringConvertible", "image"]
-- !private ["Ps28CustomDebugStringConvertible", "imageCache"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "isEditable"]
 - ["Ps28CustomDebugStringConvertible", "isScrollEnabled"]
@@ -371,13 +360,11 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "masksToBounds"]
 - ["Ps28CustomDebugStringConvertible", "nameLabel"]
 - ["Ps28CustomDebugStringConvertible", "numberOfLines"]
-- !private ["Ps28CustomDebugStringConvertible", "object"]
 - ["Ps28CustomDebugStringConvertible", "post"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - ["Ps28CustomDebugStringConvertible", "profileImageView"]
 - ["Ps28CustomDebugStringConvertible", "rgb"]
 - !private ["Ps28CustomDebugStringConvertible", "setImage"]
-- !private ["Ps28CustomDebugStringConvertible", "setObject"]
 - !private ["Ps28CustomDebugStringConvertible", "setTitle"]
 - !private ["Ps28CustomDebugStringConvertible", "setTitleColor"]
 - ["Ps28CustomDebugStringConvertible", "setupLoader"]
@@ -446,7 +433,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "font"]
 - !private ["Ps23CustomStringConvertible", "hidesWhenStopped"]
 - ["Ps23CustomStringConvertible", "image"]
-- !private ["Ps23CustomStringConvertible", "imageCache"]
 - ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "isEditable"]
 - ["Ps23CustomStringConvertible", "isScrollEnabled"]
@@ -459,13 +445,11 @@ depends-member:
 - ["Ps23CustomStringConvertible", "masksToBounds"]
 - ["Ps23CustomStringConvertible", "nameLabel"]
 - ["Ps23CustomStringConvertible", "numberOfLines"]
-- !private ["Ps23CustomStringConvertible", "object"]
 - ["Ps23CustomStringConvertible", "post"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - ["Ps23CustomStringConvertible", "profileImageView"]
 - ["Ps23CustomStringConvertible", "rgb"]
 - !private ["Ps23CustomStringConvertible", "setImage"]
-- !private ["Ps23CustomStringConvertible", "setObject"]
 - !private ["Ps23CustomStringConvertible", "setTitle"]
 - !private ["Ps23CustomStringConvertible", "setTitleColor"]
 - ["Ps23CustomStringConvertible", "setupLoader"]
@@ -537,7 +521,6 @@ depends-member:
 - !private ["Ps9Equatable", "gray"]
 - !private ["Ps9Equatable", "hidesWhenStopped"]
 - ["Ps9Equatable", "image"]
-- !private ["Ps9Equatable", "imageCache"]
 - ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "isEditable"]
 - ["Ps9Equatable", "isScrollEnabled"]
@@ -551,7 +534,6 @@ depends-member:
 - ["Ps9Equatable", "nameLabel"]
 - !private ["Ps9Equatable", "normal"]
 - ["Ps9Equatable", "numberOfLines"]
-- !private ["Ps9Equatable", "object"]
 - ["Ps9Equatable", "post"]
 - !private ["Ps9Equatable", "print"]
 - ["Ps9Equatable", "profileImageView"]
@@ -559,7 +541,6 @@ depends-member:
 - ["Ps9Equatable", "scaleAspectFill"]
 - ["Ps9Equatable", "scaleAspectFit"]
 - !private ["Ps9Equatable", "setImage"]
-- !private ["Ps9Equatable", "setObject"]
 - !private ["Ps9Equatable", "setTitle"]
 - !private ["Ps9Equatable", "setTitleColor"]
 - ["Ps9Equatable", "setupLoader"]
@@ -628,7 +609,6 @@ depends-member:
 - ["C12FacebookFeed8FeedCell", "deinit"]
 - ["C12FacebookFeed8FeedCell", "dividerLine"]
 - !private ["C12FacebookFeed8FeedCell", "fatalError"]
-- !private ["C12FacebookFeed8FeedCell", "imageCache"]
 - ["C12FacebookFeed8FeedCell", "init"]
 - ["C12FacebookFeed8FeedCell", "likeButton"]
 - ["C12FacebookFeed8FeedCell", "likesCommentsLabel"]
@@ -644,6 +624,8 @@ depends-member:
 - ["C12FacebookFeed8FeedCell", "statusImageView"]
 - ["C12FacebookFeed8FeedCell", "statusTextView"]
 - !private ["P12FacebookFeed9Fetchable", "fetchPostImage"]
+- !private ["P12FacebookFeed9Fetchable", "getCachedImage"]
+- !private ["P12FacebookFeed9Fetchable", "saveImage"]
 - !private ["P12FacebookFeed9Fetchable", "sharedInstance"]
 - !private ["Sf", "deinit"]
 - !private ["Ps8Hashable", "CGRect"]
@@ -689,7 +671,6 @@ depends-member:
 - !private ["Ps8Hashable", "gray"]
 - !private ["Ps8Hashable", "hidesWhenStopped"]
 - ["Ps8Hashable", "image"]
-- !private ["Ps8Hashable", "imageCache"]
 - ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "isEditable"]
 - ["Ps8Hashable", "isScrollEnabled"]
@@ -702,7 +683,6 @@ depends-member:
 - ["Ps8Hashable", "masksToBounds"]
 - ["Ps8Hashable", "nameLabel"]
 - ["Ps8Hashable", "numberOfLines"]
-- !private ["Ps8Hashable", "object"]
 - ["Ps8Hashable", "post"]
 - !private ["Ps8Hashable", "print"]
 - ["Ps8Hashable", "profileImageView"]
@@ -710,7 +690,6 @@ depends-member:
 - ["Ps8Hashable", "scaleAspectFill"]
 - ["Ps8Hashable", "scaleAspectFit"]
 - !private ["Ps8Hashable", "setImage"]
-- !private ["Ps8Hashable", "setObject"]
 - !private ["Ps8Hashable", "setTitle"]
 - !private ["Ps8Hashable", "setTitleColor"]
 - ["Ps8Hashable", "setupLoader"]
@@ -751,10 +730,6 @@ depends-member:
 - ["CSo18NSAttributedString", "deinit"]
 - !private ["CSo18NSAttributedString", "init"]
 - !private ["CSo18NSAttributedString", "string"]
-- ["CSo7NSCache", "deinit"]
-- ["CSo7NSCache", "init"]
-- !private ["CSo7NSCache", "object"]
-- !private ["CSo7NSCache", "setObject"]
 - !private ["PSo8NSCoding", "CGRect"]
 - !private ["PSo8NSCoding", "DispatchQueue"]
 - ["PSo8NSCoding", "FeedCell"]
@@ -793,7 +768,6 @@ depends-member:
 - ["PSo8NSCoding", "font"]
 - !private ["PSo8NSCoding", "hidesWhenStopped"]
 - ["PSo8NSCoding", "image"]
-- !private ["PSo8NSCoding", "imageCache"]
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "isEditable"]
 - ["PSo8NSCoding", "isScrollEnabled"]
@@ -897,7 +871,6 @@ depends-member:
 - ["CSo8NSObject", "font"]
 - !private ["CSo8NSObject", "hidesWhenStopped"]
 - ["CSo8NSObject", "image"]
-- !private ["CSo8NSObject", "imageCache"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "isEditable"]
 - ["CSo8NSObject", "isScrollEnabled"]
@@ -910,13 +883,11 @@ depends-member:
 - ["CSo8NSObject", "masksToBounds"]
 - ["CSo8NSObject", "nameLabel"]
 - ["CSo8NSObject", "numberOfLines"]
-- !private ["CSo8NSObject", "object"]
 - ["CSo8NSObject", "post"]
 - !private ["CSo8NSObject", "print"]
 - ["CSo8NSObject", "profileImageView"]
 - ["CSo8NSObject", "rgb"]
 - !private ["CSo8NSObject", "setImage"]
-- !private ["CSo8NSObject", "setObject"]
 - !private ["CSo8NSObject", "setTitle"]
 - !private ["CSo8NSObject", "setTitleColor"]
 - ["CSo8NSObject", "setupLoader"]
@@ -974,7 +945,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "font"]
 - !private ["PSo16NSObjectProtocol", "hidesWhenStopped"]
 - ["PSo16NSObjectProtocol", "image"]
-- !private ["PSo16NSObjectProtocol", "imageCache"]
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "isEditable"]
 - ["PSo16NSObjectProtocol", "isScrollEnabled"]
@@ -987,13 +957,11 @@ depends-member:
 - ["PSo16NSObjectProtocol", "masksToBounds"]
 - ["PSo16NSObjectProtocol", "nameLabel"]
 - ["PSo16NSObjectProtocol", "numberOfLines"]
-- !private ["PSo16NSObjectProtocol", "object"]
 - ["PSo16NSObjectProtocol", "post"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - ["PSo16NSObjectProtocol", "profileImageView"]
 - ["PSo16NSObjectProtocol", "rgb"]
 - !private ["PSo16NSObjectProtocol", "setImage"]
-- !private ["PSo16NSObjectProtocol", "setObject"]
 - !private ["PSo16NSObjectProtocol", "setTitle"]
 - !private ["PSo16NSObjectProtocol", "setTitleColor"]
 - ["PSo16NSObjectProtocol", "setupLoader"]
@@ -1045,6 +1013,8 @@ depends-member:
 - !private ["C12FacebookFeed4Post", "statusImageUrl"]
 - !private ["C12FacebookFeed4Post", "statusText"]
 - !private ["C12FacebookFeed7PostAPI", "fetchPostImage"]
+- !private ["C12FacebookFeed7PostAPI", "getCachedImage"]
+- !private ["C12FacebookFeed7PostAPI", "saveImage"]
 - !private ["C12FacebookFeed7PostAPI", "sharedInstance"]
 - !private ["Ps26RangeReplaceableCollection", "IndexDistance"]
 - !private ["Ps26RangeReplaceableCollection", "count"]
@@ -1102,7 +1072,6 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "font"]
 - !private ["PSo29UIAccessibilityIdentification", "hidesWhenStopped"]
 - ["PSo29UIAccessibilityIdentification", "image"]
-- !private ["PSo29UIAccessibilityIdentification", "imageCache"]
 - ["PSo29UIAccessibilityIdentification", "init"]
 - ["PSo29UIAccessibilityIdentification", "isEditable"]
 - ["PSo29UIAccessibilityIdentification", "isScrollEnabled"]
@@ -1172,7 +1141,6 @@ depends-member:
 - ["PSo12UIAppearance", "font"]
 - !private ["PSo12UIAppearance", "hidesWhenStopped"]
 - ["PSo12UIAppearance", "image"]
-- !private ["PSo12UIAppearance", "imageCache"]
 - ["PSo12UIAppearance", "init"]
 - ["PSo12UIAppearance", "isEditable"]
 - ["PSo12UIAppearance", "isScrollEnabled"]
@@ -1235,7 +1203,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "font"]
 - !private ["PSo21UIAppearanceContainer", "hidesWhenStopped"]
 - ["PSo21UIAppearanceContainer", "image"]
-- !private ["PSo21UIAppearanceContainer", "imageCache"]
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "isEditable"]
 - ["PSo21UIAppearanceContainer", "isScrollEnabled"]
@@ -1306,7 +1273,6 @@ depends-member:
 - ["CSo24UICollectionReusableView", "commentButton"]
 - ["CSo24UICollectionReusableView", "dividerLine"]
 - !private ["CSo24UICollectionReusableView", "fatalError"]
-- !private ["CSo24UICollectionReusableView", "imageCache"]
 - ["CSo24UICollectionReusableView", "init"]
 - ["CSo24UICollectionReusableView", "likeButton"]
 - ["CSo24UICollectionReusableView", "likesCommentsLabel"]
@@ -1357,7 +1323,6 @@ depends-member:
 - ["CSo20UICollectionViewCell", "deinit"]
 - ["CSo20UICollectionViewCell", "dividerLine"]
 - !private ["CSo20UICollectionViewCell", "fatalError"]
-- !private ["CSo20UICollectionViewCell", "imageCache"]
 - ["CSo20UICollectionViewCell", "init"]
 - ["CSo20UICollectionViewCell", "likeButton"]
 - ["CSo20UICollectionViewCell", "likesCommentsLabel"]
@@ -1426,7 +1391,6 @@ depends-member:
 - ["PSo17UICoordinateSpace", "font"]
 - !private ["PSo17UICoordinateSpace", "hidesWhenStopped"]
 - ["PSo17UICoordinateSpace", "image"]
-- !private ["PSo17UICoordinateSpace", "imageCache"]
 - ["PSo17UICoordinateSpace", "init"]
 - ["PSo17UICoordinateSpace", "isEditable"]
 - ["PSo17UICoordinateSpace", "isScrollEnabled"]
@@ -1489,7 +1453,6 @@ depends-member:
 - ["PSo13UIDynamicItem", "font"]
 - !private ["PSo13UIDynamicItem", "hidesWhenStopped"]
 - ["PSo13UIDynamicItem", "image"]
-- !private ["PSo13UIDynamicItem", "imageCache"]
 - ["PSo13UIDynamicItem", "init"]
 - ["PSo13UIDynamicItem", "isEditable"]
 - ["PSo13UIDynamicItem", "isScrollEnabled"]
@@ -1553,7 +1516,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "font"]
 - !private ["PSo18UIFocusEnvironment", "hidesWhenStopped"]
 - ["PSo18UIFocusEnvironment", "image"]
-- !private ["PSo18UIFocusEnvironment", "imageCache"]
 - ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "isEditable"]
 - ["PSo18UIFocusEnvironment", "isScrollEnabled"]
@@ -1616,7 +1578,6 @@ depends-member:
 - ["PSo11UIFocusItem", "font"]
 - !private ["PSo11UIFocusItem", "hidesWhenStopped"]
 - ["PSo11UIFocusItem", "image"]
-- !private ["PSo11UIFocusItem", "imageCache"]
 - ["PSo11UIFocusItem", "init"]
 - ["PSo11UIFocusItem", "isEditable"]
 - ["PSo11UIFocusItem", "isScrollEnabled"]
@@ -1709,7 +1670,6 @@ depends-member:
 - ["CSo11UIResponder", "font"]
 - !private ["CSo11UIResponder", "hidesWhenStopped"]
 - ["CSo11UIResponder", "image"]
-- !private ["CSo11UIResponder", "imageCache"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "isEditable"]
 - ["CSo11UIResponder", "isScrollEnabled"]
@@ -1771,7 +1731,6 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "font"]
 - !private ["PSo30UIResponderStandardEditActions", "hidesWhenStopped"]
 - ["PSo30UIResponderStandardEditActions", "image"]
-- !private ["PSo30UIResponderStandardEditActions", "imageCache"]
 - ["PSo30UIResponderStandardEditActions", "init"]
 - ["PSo30UIResponderStandardEditActions", "isEditable"]
 - ["PSo30UIResponderStandardEditActions", "isScrollEnabled"]
@@ -1855,7 +1814,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "font"]
 - !private ["PSo18UITraitEnvironment", "hidesWhenStopped"]
 - ["PSo18UITraitEnvironment", "image"]
-- !private ["PSo18UITraitEnvironment", "imageCache"]
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "isEditable"]
 - ["PSo18UITraitEnvironment", "isScrollEnabled"]
@@ -1925,7 +1883,6 @@ depends-member:
 - ["CSo6UIView", "font"]
 - !private ["CSo6UIView", "hidesWhenStopped"]
 - ["CSo6UIView", "image"]
-- !private ["CSo6UIView", "imageCache"]
 - ["CSo6UIView", "init"]
 - ["CSo6UIView", "isEditable"]
 - ["CSo6UIView", "isScrollEnabled"]
@@ -1996,7 +1953,6 @@ depends-member:
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "font"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "hidesWhenStopped"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "image"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "imageCache"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "isEditable"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "isScrollEnabled"]
@@ -2081,7 +2037,6 @@ depends-member:
 - !private ["Ps9_Hashable", "gray"]
 - !private ["Ps9_Hashable", "hidesWhenStopped"]
 - ["Ps9_Hashable", "image"]
-- !private ["Ps9_Hashable", "imageCache"]
 - ["Ps9_Hashable", "init"]
 - ["Ps9_Hashable", "isEditable"]
 - ["Ps9_Hashable", "isScrollEnabled"]
@@ -2094,7 +2049,6 @@ depends-member:
 - ["Ps9_Hashable", "masksToBounds"]
 - ["Ps9_Hashable", "nameLabel"]
 - ["Ps9_Hashable", "numberOfLines"]
-- !private ["Ps9_Hashable", "object"]
 - ["Ps9_Hashable", "post"]
 - !private ["Ps9_Hashable", "print"]
 - ["Ps9_Hashable", "profileImageView"]
@@ -2102,7 +2056,6 @@ depends-member:
 - ["Ps9_Hashable", "scaleAspectFill"]
 - ["Ps9_Hashable", "scaleAspectFit"]
 - !private ["Ps9_Hashable", "setImage"]
-- !private ["Ps9_Hashable", "setObject"]
 - !private ["Ps9_Hashable", "setTitle"]
 - !private ["Ps9_Hashable", "setTitleColor"]
 - ["Ps9_Hashable", "setupLoader"]
@@ -2174,7 +2127,6 @@ depends-nominal:
 - "Ps25LosslessStringConvertible"
 - "Ps10MirrorPath"
 - "CSo18NSAttributedString"
-- "CSo7NSCache"
 - "PSo8NSCoding"
 - "PSo9NSCopying"
 - "CSo25NSMutableAttributedString"
@@ -2261,4 +2213,4 @@ depends-external:
 - "/Users/sharmpi/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
 - "/Users/sharmpi/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
 - "/Users/sharmpi/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
-interface-hash: "7c43bfe5f6243f5bfa29818e86e20211"
+interface-hash: "23b6ffc2e98b79832d1b3a628d4ce91f"

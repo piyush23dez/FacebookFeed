@@ -6,27 +6,40 @@ provides-nominal:
 provides-member:
 - ["C12FacebookFeed11DataManager", ""]
 provides-dynamic-lookup:
+- "imageCache"
 - "saveImage"
+- "getCachedImage"
 depends-top-level:
-- "Int"
+- "UIImage"
 - "NSObject"
-- !private "StringLiteralType"
-- !private "+"
-- "AssignmentPrecedence"
-- "DataManager"
+- "NSString"
+- "CastingPrecedence"
 - !private "Array"
+- "AnyObject"
+- "AssignmentPrecedence"
+- !private "+"
+- "NSCache"
+- "Int"
+- !private "StringLiteralType"
 - "Post"
+- "DataManager"
 depends-member:
+- ["Ps9AnyObject", "NSCache"]
 - ["Ps9AnyObject", "Post"]
+- ["Ps9AnyObject", "deinit"]
+- ["Ps9AnyObject", "getCachedImage"]
 - ["Ps9AnyObject", "getPost"]
 - ["Ps9AnyObject", "getPosts"]
+- ["Ps9AnyObject", "imageCache"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "name"]
 - !private ["Ps9AnyObject", "numComments"]
 - !private ["Ps9AnyObject", "numLikes"]
+- !private ["Ps9AnyObject", "object"]
 - ["Ps9AnyObject", "posts"]
 - !private ["Ps9AnyObject", "profileImageName"]
 - ["Ps9AnyObject", "saveImage"]
+- !private ["Ps9AnyObject", "setObject"]
 - !private ["Ps9AnyObject", "statusImageName"]
 - !private ["Ps9AnyObject", "statusImageUrl"]
 - !private ["Ps9AnyObject", "statusText"]
@@ -70,16 +83,21 @@ depends-member:
 - !private ["Ps7CVarArg", "Index"]
 - !private ["Ps7CVarArg", "IndexDistance"]
 - !private ["Ps7CVarArg", "IntegerLiteralType"]
+- ["Ps7CVarArg", "NSCache"]
 - ["Ps7CVarArg", "Post"]
 - !private ["Ps7CVarArg", "Stride"]
 - !private ["Ps7CVarArg", "SubSequence"]
 - !private ["Ps7CVarArg", "_DisabledRangeIndex"]
 - !private ["Ps7CVarArg", "_Element"]
+- ["Ps7CVarArg", "getCachedImage"]
 - ["Ps7CVarArg", "getPost"]
 - ["Ps7CVarArg", "getPosts"]
+- ["Ps7CVarArg", "imageCache"]
 - ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "object"]
 - ["Ps7CVarArg", "posts"]
 - ["Ps7CVarArg", "saveImage"]
+- !private ["Ps7CVarArg", "setObject"]
 - !private ["Ps7CVarArg", "subscript"]
 - ["Ps7CVarArg", ""]
 - !private ["Ps10Collection", "Element"]
@@ -98,14 +116,20 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Element"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "IndexDistance"]
+- ["Ps28CustomDebugStringConvertible", "NSCache"]
 - ["Ps28CustomDebugStringConvertible", "Post"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- ["Ps28CustomDebugStringConvertible", "getCachedImage"]
 - ["Ps28CustomDebugStringConvertible", "getPost"]
 - ["Ps28CustomDebugStringConvertible", "getPosts"]
+- ["Ps28CustomDebugStringConvertible", "imageCache"]
 - ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "object"]
 - ["Ps28CustomDebugStringConvertible", "posts"]
 - ["Ps28CustomDebugStringConvertible", "saveImage"]
+- !private ["Ps28CustomDebugStringConvertible", "setObject"]
+- ["Ps28CustomDebugStringConvertible", "some"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "IntegerLiteralType"]
@@ -121,28 +145,40 @@ depends-member:
 - !private ["Ps17CustomReflectable", "_DisabledRangeIndex"]
 - !private ["Ps17CustomReflectable", "_Element"]
 - ["Ps17CustomReflectable", "init"]
+- ["Ps17CustomReflectable", "some"]
 - !private ["Ps17CustomReflectable", "subscript"]
 - !private ["Ps23CustomStringConvertible", "Element"]
 - !private ["Ps23CustomStringConvertible", "Index"]
 - !private ["Ps23CustomStringConvertible", "IndexDistance"]
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- ["Ps23CustomStringConvertible", "NSCache"]
 - ["Ps23CustomStringConvertible", "Post"]
 - !private ["Ps23CustomStringConvertible", "Stride"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
+- ["Ps23CustomStringConvertible", "getCachedImage"]
 - ["Ps23CustomStringConvertible", "getPost"]
 - ["Ps23CustomStringConvertible", "getPosts"]
+- ["Ps23CustomStringConvertible", "imageCache"]
 - ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "object"]
 - ["Ps23CustomStringConvertible", "posts"]
 - ["Ps23CustomStringConvertible", "saveImage"]
+- !private ["Ps23CustomStringConvertible", "setObject"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - ["Ps23CustomStringConvertible", ""]
+- ["C12FacebookFeed11DataManager", "AnyObject"]
 - ["C12FacebookFeed11DataManager", "Int"]
+- ["C12FacebookFeed11DataManager", "NSCache"]
+- ["C12FacebookFeed11DataManager", "NSString"]
 - ["C12FacebookFeed11DataManager", "Post"]
+- ["C12FacebookFeed11DataManager", "UIImage"]
 - ["C12FacebookFeed11DataManager", "deinit"]
+- ["C12FacebookFeed11DataManager", "getCachedImage"]
 - ["C12FacebookFeed11DataManager", "getPost"]
 - ["C12FacebookFeed11DataManager", "getPosts"]
+- ["C12FacebookFeed11DataManager", "imageCache"]
 - ["C12FacebookFeed11DataManager", "init"]
 - !private ["C12FacebookFeed11DataManager", "posts"]
 - ["C12FacebookFeed11DataManager", "saveImage"]
@@ -157,14 +193,19 @@ depends-member:
 - !private ["Vs26DefaultRandomAccessIndices", "SubSequence"]
 - !private ["Vs26DefaultRandomAccessIndices", "_Element"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
+- ["Ps9Equatable", "NSCache"]
 - ["Ps9Equatable", "Post"]
 - !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
+- ["Ps9Equatable", "getCachedImage"]
 - ["Ps9Equatable", "getPost"]
 - ["Ps9Equatable", "getPosts"]
+- ["Ps9Equatable", "imageCache"]
 - ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "object"]
 - ["Ps9Equatable", "posts"]
 - ["Ps9Equatable", "saveImage"]
+- !private ["Ps9Equatable", "setObject"]
 - ["Ps9Equatable", ""]
 - !private ["Ps25ExpressibleByArrayLiteral", "Element"]
 - !private ["Ps25ExpressibleByArrayLiteral", "Index"]
@@ -177,18 +218,24 @@ depends-member:
 - !private ["Ps27ExpressibleByIntegerLiteral", "IntegerLiteralType"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "_DisabledRangeIndex"]
+- ["Ps23ExpressibleByNilLiteral", "some"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
+- ["Ps8Hashable", "NSCache"]
 - ["Ps8Hashable", "Post"]
 - !private ["Ps8Hashable", "Stride"]
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
+- ["Ps8Hashable", "getCachedImage"]
 - ["Ps8Hashable", "getPost"]
 - ["Ps8Hashable", "getPosts"]
+- ["Ps8Hashable", "imageCache"]
 - ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "object"]
 - ["Ps8Hashable", "posts"]
 - ["Ps8Hashable", "saveImage"]
+- !private ["Ps8Hashable", "setObject"]
 - ["Ps8Hashable", ""]
 - !private ["Ps9Indexable", "Element"]
 - !private ["Ps9Indexable", "Index"]
@@ -239,28 +286,47 @@ depends-member:
 - !private ["Ps16MutableIndexable", "_Element"]
 - ["Ps16MutableIndexable", "init"]
 - !private ["Ps16MutableIndexable", "subscript"]
+- ["CSo7NSCache", "deinit"]
+- ["CSo7NSCache", "init"]
+- !private ["CSo7NSCache", "object"]
+- !private ["CSo7NSCache", "setObject"]
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Int"]
+- ["CSo8NSObject", "NSCache"]
+- ["CSo8NSObject", "NSString"]
 - ["CSo8NSObject", "Post"]
+- ["CSo8NSObject", "UIImage"]
 - ["CSo8NSObject", "deinit"]
+- ["CSo8NSObject", "getCachedImage"]
 - ["CSo8NSObject", "getPost"]
 - ["CSo8NSObject", "getPosts"]
+- ["CSo8NSObject", "imageCache"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "object"]
 - ["CSo8NSObject", "posts"]
 - ["CSo8NSObject", "saveImage"]
+- !private ["CSo8NSObject", "setObject"]
 - ["CSo8NSObject", ""]
+- ["PSo16NSObjectProtocol", "NSCache"]
 - ["PSo16NSObjectProtocol", "Post"]
+- ["PSo16NSObjectProtocol", "getCachedImage"]
 - ["PSo16NSObjectProtocol", "getPost"]
 - ["PSo16NSObjectProtocol", "getPosts"]
+- ["PSo16NSObjectProtocol", "imageCache"]
 - ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "object"]
 - ["PSo16NSObjectProtocol", "posts"]
 - ["PSo16NSObjectProtocol", "saveImage"]
+- !private ["PSo16NSObjectProtocol", "setObject"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "init"]
+- ["CSo8NSString", "deinit"]
 - !private ["CSo8NSString", "init"]
-- !private ["Sq", "deinit"]
+- ["Sq", "deinit"]
+- ["Sq", "some"]
 - ["C12FacebookFeed4Post", "deinit"]
 - !private ["C12FacebookFeed4Post", "init"]
 - !private ["C12FacebookFeed4Post", "name"]
@@ -334,6 +400,7 @@ depends-member:
 - ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["Ps16TextOutputStream", "init"]
+- ["CSo7UIImage", "deinit"]
 - !private ["Ps14_ArrayProtocol", "Element"]
 - !private ["Ps14_ArrayProtocol", "Index"]
 - !private ["Ps14_ArrayProtocol", "IndexDistance"]
@@ -357,14 +424,19 @@ depends-member:
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "IntegerLiteralType"]
+- ["Ps9_Hashable", "NSCache"]
 - ["Ps9_Hashable", "Post"]
 - !private ["Ps9_Hashable", "Stride"]
 - !private ["Ps9_Hashable", "_DisabledRangeIndex"]
+- ["Ps9_Hashable", "getCachedImage"]
 - ["Ps9_Hashable", "getPost"]
 - ["Ps9_Hashable", "getPosts"]
+- ["Ps9_Hashable", "imageCache"]
 - ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "object"]
 - ["Ps9_Hashable", "posts"]
 - ["Ps9_Hashable", "saveImage"]
+- !private ["Ps9_Hashable", "setObject"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps14_Incrementable", "IntegerLiteralType"]
 - !private ["Ps14_Incrementable", "Stride"]
@@ -412,6 +484,7 @@ depends-nominal:
 - "Ps25ExpressibleByArrayLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
+- "Ps23ExpressibleByNilLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
@@ -427,14 +500,15 @@ depends-nominal:
 - !private "Ps10MirrorPath"
 - "Ps17MutableCollection"
 - "Ps16MutableIndexable"
+- "CSo7NSCache"
 - !private "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
-- !private "CSo8NSString"
-- !private "Sq"
+- "CSo8NSString"
+- "Sq"
 - "C12FacebookFeed4Post"
 - "Ps22RandomAccessCollection"
 - "Ps21RandomAccessIndexable"
@@ -449,6 +523,7 @@ depends-nominal:
 - !private "Ps10Strideable"
 - "SS"
 - !private "Ps16TextOutputStream"
+- "CSo7UIImage"
 - "Ps14_ArrayProtocol"
 - "Ps24_DestructorSafeContainer"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
@@ -475,4 +550,4 @@ depends-external:
 - "/Users/sharmpi/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
 - "/Users/sharmpi/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
 - "/Users/sharmpi/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
-interface-hash: "e20a847e80cf222d9f763b1b94b8cd20"
+interface-hash: "883d63c19768400a50c9f42c9e0e528a"

@@ -9,8 +9,6 @@
 import UIKit
 import Foundation
 
-var imageCache = NSCache<NSString, AnyObject>()
-
 class FeedCell: UICollectionViewCell {
     
     var loader: UIActivityIndicatorView?
@@ -32,8 +30,9 @@ class FeedCell: UICollectionViewCell {
             loader?.startAnimating()
             if let statusImageUrl: String = post?.statusImageUrl {
                 
-                if let cachedImage = imageCache.object(forKey: statusImageUrl as NSString) as? UIImage {
-                    statusImageView.image = cachedImage
+                //Get image from cache using PostAPI datamanager
+                if let cachedImage = PostAPI.sharedInstance.getCachedImage(key: statusImageUrl as NSString) {
+                    self.statusImageView.image = cachedImage
                     loader?.stopAnimating()
                 }
                 else {
@@ -42,7 +41,9 @@ class FeedCell: UICollectionViewCell {
                         if let imageData = result as? Data {
                             if let statusImage = UIImage(data: imageData) {
                                 
-                                imageCache.setObject(statusImage, forKey: statusImageUrl as NSString)
+                                //Save image in cache using PostAPI datamanager
+                                PostAPI.sharedInstance.saveImage(image: statusImage, key: statusImageUrl as NSString)
+                                
                                 DispatchQueue.main.async {
                                     self.statusImageView.image = statusImage
                                     self.loader?.stopAnimating()

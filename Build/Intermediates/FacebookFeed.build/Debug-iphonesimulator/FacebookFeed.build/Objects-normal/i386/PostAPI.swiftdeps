@@ -17,19 +17,21 @@ provides-member:
 - ["C12FacebookFeed7PostAPI", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "HttpClient"
-- "Error"
-- "Result"
-- "APIError"
-- !private "AssignmentPrecedence"
-- "=="
+- "Void"
+- "UIImage"
+- "PostAPI"
 - "DataManager"
 - "Post"
-- "Fetchable"
+- "Error"
+- "NSString"
 - "URL"
+- "HttpClient"
+- "APIError"
+- "Result"
+- "Fetchable"
 - "String"
-- "Void"
-- "PostAPI"
+- !private "AssignmentPrecedence"
+- "=="
 depends-member:
 - ["O12FacebookFeed8APIError", "=="]
 - ["O12FacebookFeed8APIError", "NetworkError"]
@@ -47,39 +49,51 @@ depends-member:
 - ["Ps9AnyObject", "Response"]
 - !private ["Ps9AnyObject", "URL"]
 - !private ["Ps9AnyObject", "dataManager"]
+- !private ["Ps9AnyObject", "getCachedImage"]
 - ["Ps9AnyObject", "getData"]
 - !private ["Ps9AnyObject", "getPosts"]
 - !private ["Ps9AnyObject", "httpClient"]
 - ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "saveImage"]
 - !private ["Ps9AnyObject", "sendRequest"]
 - ["Ps9AnyObject", ""]
 - ["Sa", "deinit"]
 - !private ["Ps17BitwiseOperations", "hashValue"]
+- !private ["Ps7CVarArg", "getCachedImage"]
 - !private ["Ps7CVarArg", "getPosts"]
 - !private ["Ps7CVarArg", "hashValue"]
 - !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "saveImage"]
 - !private ["Ps10Comparable", "hashValue"]
+- !private ["Ps28CustomDebugStringConvertible", "getCachedImage"]
 - !private ["Ps28CustomDebugStringConvertible", "getPosts"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "saveImage"]
 - ["Ps28CustomDebugStringConvertible", "some"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "hashValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps17CustomReflectable", "hashValue"]
 - ["Ps17CustomReflectable", "some"]
+- !private ["Ps23CustomStringConvertible", "getCachedImage"]
 - !private ["Ps23CustomStringConvertible", "getPosts"]
 - !private ["Ps23CustomStringConvertible", "hashValue"]
 - !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "saveImage"]
 - !private ["C12FacebookFeed11DataManager", "deinit"]
+- !private ["C12FacebookFeed11DataManager", "getCachedImage"]
 - !private ["C12FacebookFeed11DataManager", "getPosts"]
 - !private ["C12FacebookFeed11DataManager", "init"]
+- !private ["C12FacebookFeed11DataManager", "saveImage"]
 - ["Ps9Equatable", "_code"]
 - ["Ps9Equatable", "_domain"]
 - ["Ps9Equatable", "_getEmbeddedNSError"]
 - ["Ps9Equatable", "_toAnyHashable"]
 - ["Ps9Equatable", "_userInfo"]
+- !private ["Ps9Equatable", "getCachedImage"]
 - !private ["Ps9Equatable", "getPosts"]
 - ["Ps9Equatable", "hashValue"]
 - !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "saveImage"]
 - ["Ps9Equatable", ""]
 - ["Ps5Error", "_code"]
 - ["Ps5Error", "_domain"]
@@ -106,9 +120,11 @@ depends-member:
 - ["Ps8Hashable", "_getEmbeddedNSError"]
 - ["Ps8Hashable", "_toAnyHashable"]
 - ["Ps8Hashable", "_userInfo"]
+- !private ["Ps8Hashable", "getCachedImage"]
 - !private ["Ps8Hashable", "getPosts"]
 - ["Ps8Hashable", "hashValue"]
 - !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "saveImage"]
 - ["Ps8Hashable", ""]
 - !private ["C12FacebookFeed10HttpClient", "deinit"]
 - !private ["C12FacebookFeed10HttpClient", "init"]
@@ -118,27 +134,36 @@ depends-member:
 - !private ["Ps7Integer", "hashValue"]
 - !private ["Ps17IntegerArithmetic", "hashValue"]
 - !private ["Ps10MirrorPath", "hashValue"]
+- !private ["CSo8NSObject", "getCachedImage"]
 - !private ["CSo8NSObject", "getPosts"]
 - !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "saveImage"]
+- !private ["PSo16NSObjectProtocol", "getCachedImage"]
 - !private ["PSo16NSObjectProtocol", "getPosts"]
 - !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "saveImage"]
+- ["CSo8NSString", "deinit"]
 - ["Sq", "deinit"]
 - ["Sq", "some"]
 - ["C12FacebookFeed7PostAPI", "DataManager"]
 - ["C12FacebookFeed7PostAPI", "HttpClient"]
+- ["C12FacebookFeed7PostAPI", "NSString"]
 - ["C12FacebookFeed7PostAPI", "Post"]
 - ["C12FacebookFeed7PostAPI", "PostAPI"]
 - ["C12FacebookFeed7PostAPI", "Response"]
 - ["C12FacebookFeed7PostAPI", "String"]
+- ["C12FacebookFeed7PostAPI", "UIImage"]
 - ["C12FacebookFeed7PostAPI", "URL"]
 - ["C12FacebookFeed7PostAPI", "Void"]
 - !private ["C12FacebookFeed7PostAPI", "dataManager"]
 - ["C12FacebookFeed7PostAPI", "deinit"]
 - ["C12FacebookFeed7PostAPI", "fetchPostImage"]
+- ["C12FacebookFeed7PostAPI", "getCachedImage"]
 - ["C12FacebookFeed7PostAPI", "getData"]
 - ["C12FacebookFeed7PostAPI", "getPosts"]
 - !private ["C12FacebookFeed7PostAPI", "httpClient"]
 - ["C12FacebookFeed7PostAPI", "init"]
+- ["C12FacebookFeed7PostAPI", "saveImage"]
 - ["C12FacebookFeed7PostAPI", "sharedInstance"]
 - !private ["P10Foundation20ReferenceConvertible", "init"]
 - ["O12FacebookFeed6Result", "E"]
@@ -150,6 +175,7 @@ depends-member:
 - !private ["Ps12SignedNumber", "hashValue"]
 - !private ["Ps10Strideable", "hashValue"]
 - ["SS", "deinit"]
+- ["CSo7UIImage", "deinit"]
 - ["V10Foundation3URL", "deinit"]
 - !private ["V10Foundation3URL", "init"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "hashValue"]
@@ -159,9 +185,11 @@ depends-member:
 - ["Ps9_Hashable", "_getEmbeddedNSError"]
 - ["Ps9_Hashable", "_toAnyHashable"]
 - ["Ps9_Hashable", "_userInfo"]
+- !private ["Ps9_Hashable", "getCachedImage"]
 - !private ["Ps9_Hashable", "getPosts"]
 - ["Ps9_Hashable", "hashValue"]
 - !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "saveImage"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps14_Incrementable", "hashValue"]
 - !private ["Ps8_Integer", "hashValue"]
@@ -195,6 +223,7 @@ depends-nominal:
 - !private "Ps10MirrorPath"
 - !private "CSo8NSObject"
 - !private "PSo16NSObjectProtocol"
+- "CSo8NSString"
 - "Sq"
 - "C12FacebookFeed7PostAPI"
 - !private "P10Foundation20ReferenceConvertible"
@@ -203,6 +232,7 @@ depends-nominal:
 - !private "Ps12SignedNumber"
 - !private "Ps10Strideable"
 - "SS"
+- "CSo7UIImage"
 - "V10Foundation3URL"
 - !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
 - !private "Ps34_ExpressibleByFileReferenceLiteral"
@@ -224,4 +254,4 @@ depends-external:
 - "/Users/sharmpi/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
 - "/Users/sharmpi/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
 - "/Users/sharmpi/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
-interface-hash: "f3f7f14b55aeda81b500d3b7ff85547c"
+interface-hash: "25d1ac4361c4ef25015b443849f81461"

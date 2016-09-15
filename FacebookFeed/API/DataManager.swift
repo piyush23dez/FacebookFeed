@@ -7,9 +7,12 @@
 //
 
 import Foundation
+import UIKit
 
 class DataManager: NSObject {
-    
+
+    var imageCache = NSCache<NSString, AnyObject>()
+
     private var posts = [Post]()
     
     override init() {
@@ -68,8 +71,17 @@ class DataManager: NSObject {
         posts = [postMark, postSteve, postGandhi, postBillGates, postTimCook, postDonaldTrump]
     }
     
-    func saveImage() {
+    func saveImage(image: UIImage, key: NSString) {
       //Save image in disk or cache
+        imageCache.setObject(image, forKey: key)
+    }
+    
+    func getCachedImage(key: NSString) -> UIImage? {
+        
+        if let cachedImage = imageCache.object(forKey: key) as? UIImage {
+            return cachedImage
+        }
+        return nil
     }
     
     func getPosts() -> [Post] {

@@ -49,6 +49,14 @@ class PostAPI: Fetchable {
             })
         }
     }
+    
+    func saveImage(image: UIImage, key: NSString) {
+        dataManager?.saveImage(image: image, key: key)
+    }
+    
+    func getCachedImage(key: NSString) -> UIImage? {
+        return dataManager?.getCachedImage(key: key)
+    }
 
     internal func getData(url: URL, completionHandler: ((Any) -> Void)) {
         httpClient.sendRequest(requestUrl: url) { (result) in

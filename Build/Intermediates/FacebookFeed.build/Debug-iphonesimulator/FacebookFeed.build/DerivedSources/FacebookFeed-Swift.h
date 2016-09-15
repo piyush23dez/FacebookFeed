@@ -133,11 +133,15 @@ SWIFT_CLASS("_TtC12FacebookFeed11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSString;
+@class UIImage;
 
 SWIFT_CLASS("_TtC12FacebookFeed11DataManager")
 @interface DataManager : NSObject
+@property (nonatomic, strong) NSCache<NSString *, id> * _Nonnull imageCache;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (void)saveImage;
+- (void)saveImageWithImage:(UIImage * _Nonnull)image key:(NSString * _Nonnull)key;
+- (UIImage * _Nullable)getCachedImageWithKey:(NSString * _Nonnull)key;
 @end
 
 @class UIActivityIndicatorView;
