@@ -125,20 +125,21 @@ class FeedCell: UICollectionViewCell {
         
         didSet {
             if let name = post?.name {
-                //1.Title
+                
+                //1.Title mutable attributed string
                 let title = NSMutableAttributedString(string: name, attributes: [NSFontAttributeName : UIFont.systemFont(ofSize: 14)])
                 
-                //2.Subtitle
+                //2.Subtitle mutable attributed string
                 let subTitle = NSMutableAttributedString(string: "\nDecember 18  •  San Francisco  •  ", attributes: [NSFontAttributeName : UIFont.boldSystemFont(ofSize: 12), NSForegroundColorAttributeName : UIColor.rgb(red: 155, green: 161, blue: 171)])
                 
                 //3.Title+Subtitle
                 title.append(subTitle)
                 
-                //4.Create ParagraphStyle
+                //4.Create mutable paragraph style
                 let paragraphStyle = NSMutableParagraphStyle()
                 paragraphStyle.lineSpacing = 4
                 
-                //5.Add ParagraphStyle
+                //5.Add paragraph style as an attribute to title string
                 title.addAttribute(NSParagraphStyleAttributeName, value: paragraphStyle, range: NSMakeRange(0, title.string.characters.count))
                 
                 //6.Create an image attachement
@@ -146,10 +147,10 @@ class FeedCell: UICollectionViewCell {
                 imageAttachment.image = UIImage(named: "globe_small")
                 imageAttachment.bounds = CGRect(x: 0, y: -2, width: 12, height: 12)
                 
-                //7.Create Attributed atring of attachment
+                //7.Create attributed string of image attachment
                 let attachmentAttributedString = NSAttributedString(attachment: imageAttachment)
                 
-                //8.Append attachment attributed string
+                //8.Append attachment attributed string to title
                 title.append(attachmentAttributedString)
                 nameLabel.attributedText = title
             }
