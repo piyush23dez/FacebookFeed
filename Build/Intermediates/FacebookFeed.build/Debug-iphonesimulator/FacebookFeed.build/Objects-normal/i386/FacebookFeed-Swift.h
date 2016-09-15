@@ -157,6 +157,7 @@ SWIFT_CLASS("_TtC12FacebookFeed8FeedCell")
 @property (nonatomic, strong) UIActivityIndicatorView * _Nullable loader;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)loadImages;
 - (void)setupPost;
 @property (nonatomic, strong) UIImageView * _Nonnull profileImageView;
 @property (nonatomic, strong) UILabel * _Nonnull nameLabel;

@@ -25,52 +25,56 @@ class FeedCell: UICollectionViewCell {
     var post: Post? {
         
         didSet {
+            setupPost()
+            loadImages()
+        }
+    }
+    
+    func loadImages() {
+        
+        statusImageView.image = nil
+        loader?.startAnimating()
+        if let statusImageUrl: String = post?.statusImageUrl {
             
-            statusImageView.image = nil
-            loader?.startAnimating()
-            if let statusImageUrl: String = post?.statusImageUrl {
-                
-                //Get image from cache using PostAPI datamanager
-                if let cachedImage = PostAPI.sharedInstance.getCachedImage(key: statusImageUrl as NSString) {
-                    self.statusImageView.image = cachedImage
-                    loader?.stopAnimating()
-                }
-                else {
-                    PostAPI.sharedInstance.fetchPostImage(url: post!.statusImageUrl!) { (result) in
-                        
-                        if let imageData = result as? Data {
-                            if let statusImage = UIImage(data: imageData) {
-                                
-                                //Save image in cache using PostAPI datamanager
-                                PostAPI.sharedInstance.saveImage(image: statusImage, key: statusImageUrl as NSString)
-                                
-                                DispatchQueue.main.async {
-                                    self.statusImageView.image = statusImage
-                                    self.loader?.stopAnimating()
-                                }
-                            }
-                        }
-                        else {
+            //Get image from cache using PostAPI datamanager
+            if let cachedImage = PostAPI.sharedInstance.getCachedImage(key: statusImageUrl as NSString) {
+                self.statusImageView.image = cachedImage
+                loader?.stopAnimating()
+            }
+            else {
+                PostAPI.sharedInstance.fetchPostImage(url: post!.statusImageUrl!) { (result) in
+                    
+                    if let imageData = result as? Data {
+                        if let statusImage = UIImage(data: imageData) {
+                            
+                            //Save image in cache using PostAPI datamanager
+                            PostAPI.sharedInstance.saveImage(image: statusImage, key: statusImageUrl as NSString)
                             
                             DispatchQueue.main.async {
+                                self.statusImageView.image = statusImage
                                 self.loader?.stopAnimating()
-                            }
-                            switch (result as! APIError) {
-                            case APIError.NetworkError:
-                                print("No Internet")
-                            case APIError.UnknownError:
-                                print("Unknown Internet")
                             }
                         }
                     }
+                    else {
+                        
+                        DispatchQueue.main.async {
+                            self.loader?.stopAnimating()
+                        }
+                        switch (result as! APIError) {
+                        case APIError.NetworkError:
+                            print("No Internet")
+                        case APIError.UnknownError:
+                            print("Unknown Internet")
+                        }
+                    }
                 }
-                
             }
-            setupPost()
         }
     }
     
     func setupPost() {
+        
         if let name = post?.name {
             
             //1.Title mutable attributed string

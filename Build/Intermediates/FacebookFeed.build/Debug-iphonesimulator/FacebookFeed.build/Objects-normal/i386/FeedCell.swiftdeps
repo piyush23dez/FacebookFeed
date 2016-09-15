@@ -6,57 +6,58 @@ provides-nominal:
 provides-member:
 - ["C12FacebookFeed8FeedCell", ""]
 provides-dynamic-lookup:
-- "loader"
-- "profileImageView"
 - "setupPost"
-- "likeButton"
-- "nameLabel"
-- "statusTextView"
 - "commentButton"
-- "likesCommentsLabel"
-- "shareButton"
-- "setupLoader"
-- "dividerLine"
-- "setupViews"
-- "buttonFor"
+- "statusTextView"
+- "nameLabel"
+- "profileImageView"
+- "loadImages"
 - "statusImageView"
+- "shareButton"
+- "buttonFor"
+- "setupViews"
+- "setupLoader"
+- "loader"
+- "dividerLine"
+- "likesCommentsLabel"
+- "likeButton"
 depends-top-level:
-- !private "NSMutableParagraphStyle"
-- !private "Data"
-- !private "NSFontAttributeName"
-- "String"
-- "BooleanLiteralType"
 - "UIImageView"
-- "UIColor"
-- !private "APIError"
-- "UIButton"
-- "UIImage"
-- "UIFont"
-- !private "NSTextAttachment"
-- !private "DispatchQueue"
-- !private "fatalError"
-- !private "NSMakeRange"
-- !private "NSString"
-- "UILabel"
-- !private "NSAttributedString"
-- "StringLiteralType"
+- !private "NSFontAttributeName"
 - "UIActivityIndicatorView"
-- "UITextView"
+- !private "Data"
 - !private "NSForegroundColorAttributeName"
-- "UICollectionViewCell"
-- "UIView"
-- !private "UIEdgeInsetsMake"
-- !private "print"
-- "CGRect"
-- !private "PostAPI"
+- !private "NSTextAttachment"
+- !private "APIError"
+- "AssignmentPrecedence"
+- !private "fatalError"
 - "CastingPrecedence"
+- "UIView"
+- "UIImage"
+- !private "DispatchQueue"
+- !private "NSString"
+- "UIColor"
+- !private "Dictionary"
+- "UILabel"
+- "UITextView"
+- "UIFont"
+- "UICollectionViewCell"
+- "BooleanLiteralType"
+- !private "NSMutableParagraphStyle"
+- !private "print"
+- !private "PostAPI"
 - !private "NSMutableAttributedString"
 - "NSCoder"
-- "AssignmentPrecedence"
+- "CGRect"
 - "FeedCell"
-- "Post"
-- !private "Dictionary"
 - !private "NSParagraphStyleAttributeName"
+- "UIButton"
+- "String"
+- !private "NSMakeRange"
+- !private "UIEdgeInsetsMake"
+- !private "NSAttributedString"
+- "StringLiteralType"
+- "Post"
 depends-member:
 - !private ["O12FacebookFeed8APIError", "NetworkError"]
 - !private ["O12FacebookFeed8APIError", "UnknownError"]
@@ -110,6 +111,7 @@ depends-member:
 - ["Ps9AnyObject", "likeButton"]
 - ["Ps9AnyObject", "likesCommentsLabel"]
 - !private ["Ps9AnyObject", "lineSpacing"]
+- ["Ps9AnyObject", "loadImages"]
 - ["Ps9AnyObject", "loader"]
 - !private ["Ps9AnyObject", "main"]
 - ["Ps9AnyObject", "masksToBounds"]
@@ -193,6 +195,7 @@ depends-member:
 - ["PSo15CALayerDelegate", "layer"]
 - ["PSo15CALayerDelegate", "likeButton"]
 - ["PSo15CALayerDelegate", "likesCommentsLabel"]
+- ["PSo15CALayerDelegate", "loadImages"]
 - ["PSo15CALayerDelegate", "loader"]
 - ["PSo15CALayerDelegate", "nameLabel"]
 - ["PSo15CALayerDelegate", "numberOfLines"]
@@ -268,6 +271,7 @@ depends-member:
 - ["Ps7CVarArg", "likeButton"]
 - ["Ps7CVarArg", "likesCommentsLabel"]
 - !private ["Ps7CVarArg", "lineSpacing"]
+- ["Ps7CVarArg", "loadImages"]
 - ["Ps7CVarArg", "loader"]
 - !private ["Ps7CVarArg", "main"]
 - ["Ps7CVarArg", "masksToBounds"]
@@ -355,6 +359,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "likeButton"]
 - ["Ps28CustomDebugStringConvertible", "likesCommentsLabel"]
 - !private ["Ps28CustomDebugStringConvertible", "lineSpacing"]
+- ["Ps28CustomDebugStringConvertible", "loadImages"]
 - ["Ps28CustomDebugStringConvertible", "loader"]
 - !private ["Ps28CustomDebugStringConvertible", "main"]
 - ["Ps28CustomDebugStringConvertible", "masksToBounds"]
@@ -440,6 +445,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "likeButton"]
 - ["Ps23CustomStringConvertible", "likesCommentsLabel"]
 - !private ["Ps23CustomStringConvertible", "lineSpacing"]
+- ["Ps23CustomStringConvertible", "loadImages"]
 - ["Ps23CustomStringConvertible", "loader"]
 - !private ["Ps23CustomStringConvertible", "main"]
 - ["Ps23CustomStringConvertible", "masksToBounds"]
@@ -528,6 +534,7 @@ depends-member:
 - ["Ps9Equatable", "likeButton"]
 - ["Ps9Equatable", "likesCommentsLabel"]
 - !private ["Ps9Equatable", "lineSpacing"]
+- ["Ps9Equatable", "loadImages"]
 - ["Ps9Equatable", "loader"]
 - !private ["Ps9Equatable", "main"]
 - ["Ps9Equatable", "masksToBounds"]
@@ -612,6 +619,7 @@ depends-member:
 - ["C12FacebookFeed8FeedCell", "init"]
 - ["C12FacebookFeed8FeedCell", "likeButton"]
 - ["C12FacebookFeed8FeedCell", "likesCommentsLabel"]
+- ["C12FacebookFeed8FeedCell", "loadImages"]
 - ["C12FacebookFeed8FeedCell", "loader"]
 - ["C12FacebookFeed8FeedCell", "nameLabel"]
 - ["C12FacebookFeed8FeedCell", "post"]
@@ -678,6 +686,7 @@ depends-member:
 - ["Ps8Hashable", "likeButton"]
 - ["Ps8Hashable", "likesCommentsLabel"]
 - !private ["Ps8Hashable", "lineSpacing"]
+- ["Ps8Hashable", "loadImages"]
 - ["Ps8Hashable", "loader"]
 - !private ["Ps8Hashable", "main"]
 - ["Ps8Hashable", "masksToBounds"]
@@ -775,6 +784,7 @@ depends-member:
 - ["PSo8NSCoding", "likeButton"]
 - ["PSo8NSCoding", "likesCommentsLabel"]
 - !private ["PSo8NSCoding", "lineSpacing"]
+- ["PSo8NSCoding", "loadImages"]
 - ["PSo8NSCoding", "loader"]
 - ["PSo8NSCoding", "masksToBounds"]
 - ["PSo8NSCoding", "nameLabel"]
@@ -878,6 +888,7 @@ depends-member:
 - ["CSo8NSObject", "likeButton"]
 - ["CSo8NSObject", "likesCommentsLabel"]
 - !private ["CSo8NSObject", "lineSpacing"]
+- ["CSo8NSObject", "loadImages"]
 - ["CSo8NSObject", "loader"]
 - !private ["CSo8NSObject", "main"]
 - ["CSo8NSObject", "masksToBounds"]
@@ -952,6 +963,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "likeButton"]
 - ["PSo16NSObjectProtocol", "likesCommentsLabel"]
 - !private ["PSo16NSObjectProtocol", "lineSpacing"]
+- ["PSo16NSObjectProtocol", "loadImages"]
 - ["PSo16NSObjectProtocol", "loader"]
 - !private ["PSo16NSObjectProtocol", "main"]
 - ["PSo16NSObjectProtocol", "masksToBounds"]
@@ -1078,6 +1090,7 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "layer"]
 - ["PSo29UIAccessibilityIdentification", "likeButton"]
 - ["PSo29UIAccessibilityIdentification", "likesCommentsLabel"]
+- ["PSo29UIAccessibilityIdentification", "loadImages"]
 - ["PSo29UIAccessibilityIdentification", "loader"]
 - ["PSo29UIAccessibilityIdentification", "nameLabel"]
 - ["PSo29UIAccessibilityIdentification", "numberOfLines"]
@@ -1147,6 +1160,7 @@ depends-member:
 - ["PSo12UIAppearance", "layer"]
 - ["PSo12UIAppearance", "likeButton"]
 - ["PSo12UIAppearance", "likesCommentsLabel"]
+- ["PSo12UIAppearance", "loadImages"]
 - ["PSo12UIAppearance", "loader"]
 - ["PSo12UIAppearance", "nameLabel"]
 - ["PSo12UIAppearance", "numberOfLines"]
@@ -1209,6 +1223,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "layer"]
 - ["PSo21UIAppearanceContainer", "likeButton"]
 - ["PSo21UIAppearanceContainer", "likesCommentsLabel"]
+- ["PSo21UIAppearanceContainer", "loadImages"]
 - ["PSo21UIAppearanceContainer", "loader"]
 - ["PSo21UIAppearanceContainer", "nameLabel"]
 - ["PSo21UIAppearanceContainer", "numberOfLines"]
@@ -1276,6 +1291,7 @@ depends-member:
 - ["CSo24UICollectionReusableView", "init"]
 - ["CSo24UICollectionReusableView", "likeButton"]
 - ["CSo24UICollectionReusableView", "likesCommentsLabel"]
+- ["CSo24UICollectionReusableView", "loadImages"]
 - ["CSo24UICollectionReusableView", "loader"]
 - ["CSo24UICollectionReusableView", "nameLabel"]
 - ["CSo24UICollectionReusableView", "post"]
@@ -1326,6 +1342,7 @@ depends-member:
 - ["CSo20UICollectionViewCell", "init"]
 - ["CSo20UICollectionViewCell", "likeButton"]
 - ["CSo20UICollectionViewCell", "likesCommentsLabel"]
+- ["CSo20UICollectionViewCell", "loadImages"]
 - ["CSo20UICollectionViewCell", "loader"]
 - ["CSo20UICollectionViewCell", "nameLabel"]
 - ["CSo20UICollectionViewCell", "post"]
@@ -1397,6 +1414,7 @@ depends-member:
 - ["PSo17UICoordinateSpace", "layer"]
 - ["PSo17UICoordinateSpace", "likeButton"]
 - ["PSo17UICoordinateSpace", "likesCommentsLabel"]
+- ["PSo17UICoordinateSpace", "loadImages"]
 - ["PSo17UICoordinateSpace", "loader"]
 - ["PSo17UICoordinateSpace", "nameLabel"]
 - ["PSo17UICoordinateSpace", "numberOfLines"]
@@ -1459,6 +1477,7 @@ depends-member:
 - ["PSo13UIDynamicItem", "layer"]
 - ["PSo13UIDynamicItem", "likeButton"]
 - ["PSo13UIDynamicItem", "likesCommentsLabel"]
+- ["PSo13UIDynamicItem", "loadImages"]
 - ["PSo13UIDynamicItem", "loader"]
 - ["PSo13UIDynamicItem", "nameLabel"]
 - ["PSo13UIDynamicItem", "numberOfLines"]
@@ -1522,6 +1541,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "layer"]
 - ["PSo18UIFocusEnvironment", "likeButton"]
 - ["PSo18UIFocusEnvironment", "likesCommentsLabel"]
+- ["PSo18UIFocusEnvironment", "loadImages"]
 - ["PSo18UIFocusEnvironment", "loader"]
 - ["PSo18UIFocusEnvironment", "nameLabel"]
 - ["PSo18UIFocusEnvironment", "numberOfLines"]
@@ -1584,6 +1604,7 @@ depends-member:
 - ["PSo11UIFocusItem", "layer"]
 - ["PSo11UIFocusItem", "likeButton"]
 - ["PSo11UIFocusItem", "likesCommentsLabel"]
+- ["PSo11UIFocusItem", "loadImages"]
 - ["PSo11UIFocusItem", "loader"]
 - ["PSo11UIFocusItem", "nameLabel"]
 - ["PSo11UIFocusItem", "numberOfLines"]
@@ -1676,6 +1697,7 @@ depends-member:
 - ["CSo11UIResponder", "layer"]
 - ["CSo11UIResponder", "likeButton"]
 - ["CSo11UIResponder", "likesCommentsLabel"]
+- ["CSo11UIResponder", "loadImages"]
 - ["CSo11UIResponder", "loader"]
 - ["CSo11UIResponder", "nameLabel"]
 - ["CSo11UIResponder", "numberOfLines"]
@@ -1737,6 +1759,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "layer"]
 - ["PSo30UIResponderStandardEditActions", "likeButton"]
 - ["PSo30UIResponderStandardEditActions", "likesCommentsLabel"]
+- ["PSo30UIResponderStandardEditActions", "loadImages"]
 - ["PSo30UIResponderStandardEditActions", "loader"]
 - ["PSo30UIResponderStandardEditActions", "nameLabel"]
 - ["PSo30UIResponderStandardEditActions", "numberOfLines"]
@@ -1820,6 +1843,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "layer"]
 - ["PSo18UITraitEnvironment", "likeButton"]
 - ["PSo18UITraitEnvironment", "likesCommentsLabel"]
+- ["PSo18UITraitEnvironment", "loadImages"]
 - ["PSo18UITraitEnvironment", "loader"]
 - ["PSo18UITraitEnvironment", "nameLabel"]
 - ["PSo18UITraitEnvironment", "numberOfLines"]
@@ -1889,6 +1913,7 @@ depends-member:
 - ["CSo6UIView", "layer"]
 - ["CSo6UIView", "likeButton"]
 - ["CSo6UIView", "likesCommentsLabel"]
+- ["CSo6UIView", "loadImages"]
 - ["CSo6UIView", "loader"]
 - ["CSo6UIView", "nameLabel"]
 - ["CSo6UIView", "numberOfLines"]
@@ -1959,6 +1984,7 @@ depends-member:
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "layer"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "likeButton"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "likesCommentsLabel"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "loadImages"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "loader"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "nameLabel"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "numberOfLines"]
@@ -2044,6 +2070,7 @@ depends-member:
 - ["Ps9_Hashable", "likeButton"]
 - ["Ps9_Hashable", "likesCommentsLabel"]
 - !private ["Ps9_Hashable", "lineSpacing"]
+- ["Ps9_Hashable", "loadImages"]
 - ["Ps9_Hashable", "loader"]
 - !private ["Ps9_Hashable", "main"]
 - ["Ps9_Hashable", "masksToBounds"]
@@ -2213,4 +2240,4 @@ depends-external:
 - "/Users/sharmpi/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
 - "/Users/sharmpi/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
 - "/Users/sharmpi/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
-interface-hash: "23b6ffc2e98b79832d1b3a628d4ce91f"
+interface-hash: "f68ca2a7649f9ba0823193affd47d46e"
