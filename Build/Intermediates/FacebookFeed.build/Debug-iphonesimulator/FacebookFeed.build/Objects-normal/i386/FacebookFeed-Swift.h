@@ -111,6 +111,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import ObjectiveC;
 @import CoreGraphics;
 @import Foundation;
 #endif
@@ -132,6 +133,14 @@ SWIFT_CLASS("_TtC12FacebookFeed11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC12FacebookFeed11DataManager")
+@interface DataManager : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)saveImage;
+@end
+
+@class UIActivityIndicatorView;
 @class NSCoder;
 @class UIImageView;
 @class UILabel;
@@ -141,8 +150,10 @@ SWIFT_CLASS("_TtC12FacebookFeed11AppDelegate")
 
 SWIFT_CLASS("_TtC12FacebookFeed8FeedCell")
 @interface FeedCell : UICollectionViewCell
+@property (nonatomic, strong) UIActivityIndicatorView * _Nullable loader;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)setupPost;
 @property (nonatomic, strong) UIImageView * _Nonnull profileImageView;
 @property (nonatomic, strong) UILabel * _Nonnull nameLabel;
 @property (nonatomic, strong) UITextView * _Nonnull statusTextView;
@@ -154,6 +165,7 @@ SWIFT_CLASS("_TtC12FacebookFeed8FeedCell")
 @property (nonatomic, strong) UIButton * _Nonnull shareButton;
 + (UIButton * _Nonnull)buttonForTitle:(NSString * _Nonnull)title imageName:(NSString * _Nonnull)imageName;
 - (void)setupViews;
+- (void)setupLoader;
 @end
 
 @class UICollectionViewLayout;

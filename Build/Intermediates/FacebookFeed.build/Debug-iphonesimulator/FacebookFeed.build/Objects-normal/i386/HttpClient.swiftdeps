@@ -1,0 +1,239 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "HttpClient"
+provides-nominal:
+- "C12FacebookFeed10HttpClient"
+provides-member:
+- ["C12FacebookFeed10HttpClient", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "HttpClient"
+- "Data"
+- "Result"
+- !private "HTTPURLResponse"
+- "APIError"
+- "URLSessionConfiguration"
+- !private "Int"
+- !private "!="
+- "URL"
+- !private "CastingPrecedence"
+- !private "=="
+- !private "AssignmentPrecedence"
+- "Void"
+- "URLSession"
+depends-member:
+- !private ["O12FacebookFeed8APIError", "NetworkError"]
+- !private ["O12FacebookFeed8APIError", "UnknownError"]
+- !private ["Ps9AnyObject", "Result"]
+- !private ["Ps9AnyObject", "URLSession"]
+- ["Ps9AnyObject", "URLSessionConfiguration"]
+- !private ["Ps9AnyObject", "dataTask"]
+- ["Ps9AnyObject", "default"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "requestCachePolicy"]
+- !private ["Ps9AnyObject", "resume"]
+- !private ["Ps9AnyObject", "session"]
+- !private ["Ps9AnyObject", "sessionConfig"]
+- !private ["Ps9AnyObject", "statusCode"]
+- !private ["Ps9AnyObject", "timeoutIntervalForRequest"]
+- !private ["Ps9AnyObject", "timeoutIntervalForResource"]
+- ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["Ps7CVarArg", "dataTask"]
+- ["Ps7CVarArg", "default"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "requestCachePolicy"]
+- !private ["Ps7CVarArg", "resume"]
+- !private ["Ps7CVarArg", "statusCode"]
+- !private ["Ps7CVarArg", "timeoutIntervalForRequest"]
+- !private ["Ps7CVarArg", "timeoutIntervalForResource"]
+- !private ["OCSo12NSURLRequest11CachePolicy", "deinit"]
+- !private ["OCSo12NSURLRequest11CachePolicy", "reloadIgnoringLocalCacheData"]
+- !private ["Ps28CustomDebugStringConvertible", "NetworkError"]
+- !private ["Ps28CustomDebugStringConvertible", "UnknownError"]
+- !private ["Ps28CustomDebugStringConvertible", "dataTask"]
+- ["Ps28CustomDebugStringConvertible", "default"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "requestCachePolicy"]
+- !private ["Ps28CustomDebugStringConvertible", "resume"]
+- !private ["Ps28CustomDebugStringConvertible", "some"]
+- !private ["Ps28CustomDebugStringConvertible", "statusCode"]
+- !private ["Ps28CustomDebugStringConvertible", "timeoutIntervalForRequest"]
+- !private ["Ps28CustomDebugStringConvertible", "timeoutIntervalForResource"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "NetworkError"]
+- !private ["Ps17CustomReflectable", "UnknownError"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "some"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "dataTask"]
+- ["Ps23CustomStringConvertible", "default"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "requestCachePolicy"]
+- !private ["Ps23CustomStringConvertible", "resume"]
+- !private ["Ps23CustomStringConvertible", "statusCode"]
+- !private ["Ps23CustomStringConvertible", "timeoutIntervalForRequest"]
+- !private ["Ps23CustomStringConvertible", "timeoutIntervalForResource"]
+- !private ["V10Foundation4Data", "deinit"]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "NetworkError"]
+- !private ["Ps9Equatable", "UnknownError"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "dataTask"]
+- ["Ps9Equatable", "default"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "reloadIgnoringLocalCacheData"]
+- !private ["Ps9Equatable", "requestCachePolicy"]
+- !private ["Ps9Equatable", "resume"]
+- !private ["Ps9Equatable", "statusCode"]
+- !private ["Ps9Equatable", "timeoutIntervalForRequest"]
+- !private ["Ps9Equatable", "timeoutIntervalForResource"]
+- !private ["Ps5Error", "NetworkError"]
+- !private ["Ps5Error", "UnknownError"]
+- !private ["Ps5Error", "deinit"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps23ExpressibleByNilLiteral", "NetworkError"]
+- !private ["Ps23ExpressibleByNilLiteral", "UnknownError"]
+- !private ["Ps23ExpressibleByNilLiteral", "some"]
+- !private ["CSo15HTTPURLResponse", "deinit"]
+- !private ["CSo15HTTPURLResponse", "statusCode"]
+- !private ["Ps8Hashable", "NetworkError"]
+- !private ["Ps8Hashable", "UnknownError"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "dataTask"]
+- ["Ps8Hashable", "default"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "reloadIgnoringLocalCacheData"]
+- !private ["Ps8Hashable", "requestCachePolicy"]
+- !private ["Ps8Hashable", "resume"]
+- !private ["Ps8Hashable", "statusCode"]
+- !private ["Ps8Hashable", "timeoutIntervalForRequest"]
+- !private ["Ps8Hashable", "timeoutIntervalForResource"]
+- ["C12FacebookFeed10HttpClient", "APIError"]
+- ["C12FacebookFeed10HttpClient", "Data"]
+- !private ["C12FacebookFeed10HttpClient", "HTTPURLResponse"]
+- !private ["C12FacebookFeed10HttpClient", "Int"]
+- ["C12FacebookFeed10HttpClient", "Result"]
+- ["C12FacebookFeed10HttpClient", "URL"]
+- ["C12FacebookFeed10HttpClient", "URLSession"]
+- ["C12FacebookFeed10HttpClient", "URLSessionConfiguration"]
+- ["C12FacebookFeed10HttpClient", "Void"]
+- ["C12FacebookFeed10HttpClient", "deinit"]
+- ["C12FacebookFeed10HttpClient", "init"]
+- ["C12FacebookFeed10HttpClient", "sendRequest"]
+- !private ["C12FacebookFeed10HttpClient", "session"]
+- !private ["C12FacebookFeed10HttpClient", "sessionConfig"]
+- !private ["Si", "deinit"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSo8NSCoding", "statusCode"]
+- ["PSo9NSCopying", "default"]
+- !private ["PSo9NSCopying", "requestCachePolicy"]
+- !private ["PSo9NSCopying", "resume"]
+- !private ["PSo9NSCopying", "statusCode"]
+- !private ["PSo9NSCopying", "timeoutIntervalForRequest"]
+- !private ["PSo9NSCopying", "timeoutIntervalForResource"]
+- !private ["CSo8NSObject", "dataTask"]
+- ["CSo8NSObject", "default"]
+- !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "requestCachePolicy"]
+- !private ["CSo8NSObject", "resume"]
+- !private ["CSo8NSObject", "statusCode"]
+- !private ["CSo8NSObject", "timeoutIntervalForRequest"]
+- !private ["CSo8NSObject", "timeoutIntervalForResource"]
+- !private ["PSo16NSObjectProtocol", "dataTask"]
+- ["PSo16NSObjectProtocol", "default"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "requestCachePolicy"]
+- !private ["PSo16NSObjectProtocol", "resume"]
+- !private ["PSo16NSObjectProtocol", "statusCode"]
+- !private ["PSo16NSObjectProtocol", "timeoutIntervalForRequest"]
+- !private ["PSo16NSObjectProtocol", "timeoutIntervalForResource"]
+- !private ["PSo14NSSecureCoding", "statusCode"]
+- !private ["Sq", "NetworkError"]
+- !private ["Sq", "UnknownError"]
+- !private ["Sq", "deinit"]
+- !private ["Sq", "some"]
+- !private ["Ps16RawRepresentable", "reloadIgnoringLocalCacheData"]
+- !private ["O12FacebookFeed6Result", "Failure"]
+- !private ["O12FacebookFeed6Result", "Success"]
+- !private ["O12FacebookFeed6Result", "deinit"]
+- ["V10Foundation3URL", "deinit"]
+- !private ["CSo11URLResponse", "statusCode"]
+- !private ["CSo10URLSession", "dataTask"]
+- ["CSo10URLSession", "deinit"]
+- !private ["CSo10URLSession", "init"]
+- ["CSo23URLSessionConfiguration", "default"]
+- ["CSo23URLSessionConfiguration", "deinit"]
+- !private ["CSo23URLSessionConfiguration", "requestCachePolicy"]
+- !private ["CSo23URLSessionConfiguration", "timeoutIntervalForRequest"]
+- !private ["CSo23URLSessionConfiguration", "timeoutIntervalForResource"]
+- ["CSo18URLSessionDataTask", "deinit"]
+- !private ["CSo18URLSessionDataTask", "resume"]
+- !private ["CSo14URLSessionTask", "resume"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "NetworkError"]
+- !private ["Ps9_Hashable", "UnknownError"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "dataTask"]
+- ["Ps9_Hashable", "default"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "reloadIgnoringLocalCacheData"]
+- !private ["Ps9_Hashable", "requestCachePolicy"]
+- !private ["Ps9_Hashable", "resume"]
+- !private ["Ps9_Hashable", "statusCode"]
+- !private ["Ps9_Hashable", "timeoutIntervalForRequest"]
+- !private ["Ps9_Hashable", "timeoutIntervalForResource"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+depends-nominal:
+- !private "O12FacebookFeed8APIError"
+- "Ps9AnyObject"
+- !private "Sb"
+- "Ps7CVarArg"
+- !private "OCSo12NSURLRequest11CachePolicy"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- !private "V10Foundation4Data"
+- !private "Sd"
+- "Ps9Equatable"
+- !private "Ps5Error"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps23ExpressibleByNilLiteral"
+- !private "CSo15HTTPURLResponse"
+- "Ps8Hashable"
+- "C12FacebookFeed10HttpClient"
+- !private "Si"
+- !private "Ps25LosslessStringConvertible"
+- !private "PSo8NSCoding"
+- "PSo9NSCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "Sq"
+- !private "Ps16RawRepresentable"
+- !private "O12FacebookFeed6Result"
+- "V10Foundation3URL"
+- !private "CSo11URLResponse"
+- "CSo10URLSession"
+- "CSo23URLSessionConfiguration"
+- "CSo18URLSessionDataTask"
+- !private "CSo14URLSessionTask"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/sharmpi/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
+- "/Users/sharmpi/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/SwiftOnoneSupport.swiftmodule"
+- "/Users/sharmpi/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Foundation.swiftmodule"
+- "/Users/sharmpi/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Darwin.swiftmodule"
+- "/Users/sharmpi/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.swiftmodule"
+- "/Users/sharmpi/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.swiftmodule"
+- "/Users/sharmpi/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
+- "/Users/sharmpi/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
+- "/Users/sharmpi/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
+interface-hash: "e17169d4e44255a3bed2328dbdddd1fb"

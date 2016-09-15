@@ -8,18 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		A652D2BC1D85F5B800DEA7A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A652D2BB1D85F5B800DEA7A3 /* AppDelegate.swift */; };
-		A652D2BE1D85F5B800DEA7A3 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A652D2BD1D85F5B800DEA7A3 /* FeedViewController.swift */; };
 		A652D2C31D85F5B800DEA7A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A652D2C21D85F5B800DEA7A3 /* Assets.xcassets */; };
 		A652D2C61D85F5B800DEA7A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A652D2C41D85F5B800DEA7A3 /* LaunchScreen.storyboard */; };
+		A6BEE0A11D8A29D20011C609 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BEE0A01D8A29D20011C609 /* Extensions.swift */; };
+		A6BEE0A81D8A2A230011C609 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BEE0A31D8A2A230011C609 /* FeedCell.swift */; };
+		A6BEE0A91D8A2A230011C609 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BEE0A51D8A2A230011C609 /* FeedViewController.swift */; };
+		A6BEE0AA1D8A2A230011C609 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BEE0A71D8A2A230011C609 /* Posts.swift */; };
+		A6BEE0B41D8A2CF60011C609 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BEE0B31D8A2CF60011C609 /* DataManager.swift */; };
+		A6BEE0B61D8A2CFF0011C609 /* PostAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BEE0B51D8A2CFF0011C609 /* PostAPI.swift */; };
+		A6BEE0B81D8A2D0A0011C609 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BEE0B71D8A2D0A0011C609 /* HttpClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A652D2B81D85F5B800DEA7A3 /* FacebookFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A652D2BB1D85F5B800DEA7A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A652D2BD1D85F5B800DEA7A3 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		A652D2C21D85F5B800DEA7A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A652D2C51D85F5B800DEA7A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A652D2C71D85F5B800DEA7A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6BEE0A01D8A29D20011C609 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A6BEE0A31D8A2A230011C609 /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		A6BEE0A51D8A2A230011C609 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		A6BEE0A71D8A2A230011C609 /* Posts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		A6BEE0B31D8A2CF60011C609 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		A6BEE0B51D8A2CFF0011C609 /* PostAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostAPI.swift; sourceTree = "<group>"; };
+		A6BEE0B71D8A2D0A0011C609 /* HttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				A652D2BA1D85F5B800DEA7A3 /* FacebookFeed */,
+				A6BEE0AB1D8A2A3A0011C609 /* Supporting Files */,
 				A652D2B91D85F5B800DEA7A3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,13 +65,67 @@
 		A652D2BA1D85F5B800DEA7A3 /* FacebookFeed */ = {
 			isa = PBXGroup;
 			children = (
+				A6BEE0AF1D8A2CCE0011C609 /* API */,
+				A6BEE0AC1D8A2BE40011C609 /* Manager */,
+				A6BEE0A41D8A2A230011C609 /* Controller */,
+				A6BEE0A21D8A2A230011C609 /* Cells */,
+				A6BEE0A61D8A2A230011C609 /* Model */,
+			);
+			path = FacebookFeed;
+			sourceTree = "<group>";
+		};
+		A6BEE0A21D8A2A230011C609 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A6BEE0A31D8A2A230011C609 /* FeedCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A6BEE0A41D8A2A230011C609 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A6BEE0A51D8A2A230011C609 /* FeedViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A6BEE0A61D8A2A230011C609 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A6BEE0A71D8A2A230011C609 /* Posts.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A6BEE0AB1D8A2A3A0011C609 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6BEE0A01D8A29D20011C609 /* Extensions.swift */,
 				A652D2BB1D85F5B800DEA7A3 /* AppDelegate.swift */,
-				A652D2BD1D85F5B800DEA7A3 /* FeedViewController.swift */,
 				A652D2C21D85F5B800DEA7A3 /* Assets.xcassets */,
 				A652D2C41D85F5B800DEA7A3 /* LaunchScreen.storyboard */,
 				A652D2C71D85F5B800DEA7A3 /* Info.plist */,
 			);
+			name = "Supporting Files";
 			path = FacebookFeed;
+			sourceTree = "<group>";
+		};
+		A6BEE0AC1D8A2BE40011C609 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		A6BEE0AF1D8A2CCE0011C609 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A6BEE0B31D8A2CF60011C609 /* DataManager.swift */,
+				A6BEE0B51D8A2CFF0011C609 /* PostAPI.swift */,
+				A6BEE0B71D8A2D0A0011C609 /* HttpClient.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,8 +200,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A652D2BE1D85F5B800DEA7A3 /* FeedViewController.swift in Sources */,
+				A6BEE0B81D8A2D0A0011C609 /* HttpClient.swift in Sources */,
+				A6BEE0A11D8A29D20011C609 /* Extensions.swift in Sources */,
+				A6BEE0B61D8A2CFF0011C609 /* PostAPI.swift in Sources */,
+				A6BEE0B41D8A2CF60011C609 /* DataManager.swift in Sources */,
 				A652D2BC1D85F5B800DEA7A3 /* AppDelegate.swift in Sources */,
+				A6BEE0AA1D8A2A230011C609 /* Posts.swift in Sources */,
+				A6BEE0A91D8A2A230011C609 /* FeedViewController.swift in Sources */,
+				A6BEE0A81D8A2A230011C609 /* FeedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,7 +265,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -236,7 +309,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -251,6 +324,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3X56VBA9PQ;
 				INFOPLIST_FILE = FacebookFeed/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.piyush.FacebookFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -264,6 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3X56VBA9PQ;
 				INFOPLIST_FILE = FacebookFeed/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.piyush.FacebookFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -290,6 +365,7 @@
 				A652D2CC1D85F5B800DEA7A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

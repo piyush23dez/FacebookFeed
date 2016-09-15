@@ -1,0 +1,12 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.43.6 clang-800.0.38)"
+options: "7d07a636e314b5e353e18c73da06f37d"
+build_time: [527271780, 869868000]
+inputs:
+  "/Users/sharmpi/Desktop/FacebookFeed/FacebookFeed/API/HttpClient.swift": [527269661, 0]
+  "/Users/sharmpi/Desktop/FacebookFeed/FacebookFeed/Extensions.swift": [527216419, 0]
+  "/Users/sharmpi/Desktop/FacebookFeed/FacebookFeed/API/PostAPI.swift": [527269670, 0]
+  "/Users/sharmpi/Desktop/FacebookFeed/FacebookFeed/API/DataManager.swift": [527268912, 0]
+  "/Users/sharmpi/Desktop/FacebookFeed/FacebookFeed/AppDelegate.swift": [527010448, 0]
+  "/Users/sharmpi/Desktop/FacebookFeed/FacebookFeed/Model/Posts.swift": [527219610, 0]
+  "/Users/sharmpi/Desktop/FacebookFeed/FacebookFeed/Controller/FeedViewController.swift": [527267638, 0]
+  "/Users/sharmpi/Desktop/FacebookFeed/FacebookFeed/Cells/FeedCell.swift": [527271742, 0]

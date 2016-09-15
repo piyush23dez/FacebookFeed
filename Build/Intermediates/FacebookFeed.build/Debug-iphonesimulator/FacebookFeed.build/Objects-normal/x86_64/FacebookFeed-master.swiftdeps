@@ -1,6 +1,0 @@
-version: "Apple Swift version 3.0 (swiftlang-800.0.43.6 clang-800.0.38)"
-options: "9ae2a333df32e92a006b7236e2e6080f"
-build_time: [527109977, 549284000]
-inputs:
-  "/Users/sharmpi/Desktop/FacebookFeed/FacebookFeed/FeedViewController.swift": [527027047, 0]
-  "/Users/sharmpi/Desktop/FacebookFeed/FacebookFeed/AppDelegate.swift": [527010448, 0]
