@@ -58,14 +58,23 @@ class PostAPI: Fetchable {
         return dataManager?.getCachedImage(key: key)
     }
 
-    internal func getData(url: URL, completionHandler: ((Any) -> Void)) {
+    func getData(url: URL, completionHandler: @escaping ((Any) -> Void)) {
         httpClient.sendRequest(requestUrl: url) { (result) in
             
             switch result {
             case .Success(let data):
                 completionHandler(data)
-            case .Failure(let error):
-                completionHandler(error)
+            case .Failure(let errorData):
+                if let errorString  = errorData as? String {
+                    completionHandler(errorString)
+                }
+                else {
+                    if let errorJson = try? JSONSerialization.jsonObject(with: errorData as! Data) as? Dictionary<String, Any> {
+                        if let errorDesc = errorJson?["error"] as? String {
+                            completionHandler(errorDesc)
+                        }
+                    }
+                }
             }
         }
     }
