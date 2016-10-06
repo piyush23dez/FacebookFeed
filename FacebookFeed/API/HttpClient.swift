@@ -18,7 +18,7 @@ class HttpClient {
         return URLSession(configuration: sessionConfig)
     }
     
-    func sendRequest(requestUrl: URL, completionHandler: ((Result<Data, APIError>) -> Void)) {
+    func sendRequest(requestUrl: URL, completionHandler: ((Result<Data, Any>) -> Void)) {
         
         let task = session.dataTask(with: requestUrl) { (data, response, error) in
             
@@ -37,11 +37,12 @@ class HttpClient {
             }
             else {
                 if error != nil {
-                    print(error!.localizedDescription)
-                    completionHandler(Result.Failure(error: .NetworkError))
+                    completionHandler(Result.Failure(error: error!.localizedDescription))
                 }
                 else {
-                    completionHandler(Result.Failure(error: .UnknownError))
+                    if let errorData = data {
+                        completionHandler(Result.Failure(error: errorData))
+                    }
                 }
             }
         }
