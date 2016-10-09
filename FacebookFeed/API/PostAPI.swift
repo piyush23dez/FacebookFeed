@@ -41,7 +41,7 @@ class PostAPI: Fetchable {
         return dataManager!.getPosts()
     }
     
-    func fetchPostImage(url: String, completionHandler: ((Any) -> Void) ) {
+    func fetchPostImage(url: String, completionHandler: ((Response) -> Void) ) {
         
         if let url = URL.init(string: url)  {
             getData(url: url, completionHandler: { (result) in
@@ -58,7 +58,7 @@ class PostAPI: Fetchable {
         return dataManager?.getCachedImage(key: key)
     }
 
-    func getData(url: URL, completionHandler: @escaping ((Any) -> Void)) {
+    func getData(url: URL, completionHandler: @escaping ((Response) -> Void)) {
         httpClient.sendRequest(requestUrl: url) { (result) in
             
             switch result {
