@@ -61,12 +61,7 @@ class FeedCell: UICollectionViewCell {
                         DispatchQueue.main.async {
                             self.loader?.stopAnimating()
                         }
-                        switch (result as! APIError) {
-                        case APIError.NetworkError:
-                            print("Network Error")
-                        case APIError.UnknownError:
-                            print("Unknown Error")
-                        }
+                        print("Error: \(result)")
                     }
                 }
             }
