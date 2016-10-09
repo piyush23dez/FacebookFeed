@@ -69,7 +69,7 @@ class PostAPI: Fetchable {
                     completionHandler(errorString)
                 }
                 else {
-                    if let errorJson = try? JSONSerialization.jsonObject(with: errorData as! Data) as? Dictionary<String, Response> {
+                    if let errorJson = try? JSONSerialization.jsonObject(with: errorData as! Data) as? Dictionary<String, Any> {
                         if let errorDesc = errorJson?["error"] as? String {
                             completionHandler(errorDesc)
                         }
