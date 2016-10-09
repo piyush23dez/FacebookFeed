@@ -25,7 +25,7 @@ class FeedCell: UICollectionViewCell {
     var post: Post? {
         
         didSet {
-            setupPost()
+            setupData()
             loadImages()
         }
     }
@@ -68,7 +68,7 @@ class FeedCell: UICollectionViewCell {
         }
     }
     
-    func setupPost() {
+    func setupData() {
         
         if let name = post?.name {
             
