@@ -18,7 +18,7 @@ class HttpClient {
         return URLSession(configuration: sessionConfig)
     }
     
-    func sendRequest(requestUrl: URL, completionHandler: ((Result<Data, Any>) -> Void)) {
+    func sendRequest(requestUrl: URL, completionHandler: @escaping ((Result<Data, Any>) -> Void)) {
         
         let task = session.dataTask(with: requestUrl) { (data, response, error) in
             
